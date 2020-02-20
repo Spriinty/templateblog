@@ -30,7 +30,7 @@
 
     <title>Bienvenue sur le blog de la promo 33 de l'ACS !</title>
 
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/bootstrap.css">
     <link href="<?php bloginfo('template_directory');?>/css/main.css" rel="stylesheet">
     <!-- HTML5 shim et Respond.js pour supporter les éléments HTML5 pour Internet Explorer 8 -->
     <!--[if lt IE 9]>
@@ -49,36 +49,3 @@
         </h1>
     </header>
     <!-- FIN BLOC HEADER -->
-    
-    <!-- DEBUT SIDEBAR -->
-    <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-        <div class="sidebar-module sidebar-module-inset">
-            <h4>À Propos</h4>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet
-                fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-        </div>
-    </div><!-- /.blog-sidebar -->
-    <!-- FIN SIDEBAR -->
-
-    <!-- DEBUT BLOC CONTENU DE PAGE -->
-    <main>
-        <div class="blog-post">
-            <h2 class="blog-post-title">Un article de blog</h2>
-            <p class="blog-post-meta">20 décembre 2017 par <a href="#">Louis-Philippe</a></p>
-            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus.
-                Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur
-                est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-        </div><!-- /.blog-post -->
-    </main>
-    <!-- FIN BLOC CONTENU DE PAGE -->
-
-    <!-- DEBUT BLOC FOOTER -->
-    <footer class="blog-footer">
-        <p>©Pouet pouet</p>
-    </footer>
-    <!-- FIN BLOC FOOTER -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-</body>
-
-</html>
