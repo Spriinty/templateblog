@@ -7,7 +7,7 @@
 ?>
 	<h1><?php the_title(); ?></h1>
     <div class="main">
-      <div class="d-flex justify-content-between lastarticles">
+      <div class="container d-flex justify-content-between lastarticles">
         
         <?php
         
