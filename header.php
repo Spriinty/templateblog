@@ -32,6 +32,7 @@
 
     <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/bootstrap.css">
     <link href="<?php bloginfo('template_directory');?>/css/main.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_directory');?>/style.css" rel="stylesheet">
     <!-- HTML5 shim et Respond.js pour supporter les éléments HTML5 pour Internet Explorer 8 -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
