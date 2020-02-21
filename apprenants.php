@@ -20,26 +20,28 @@ $args = array(
 
 // 2. on exécute la query
 $my_query = new WP_Query($args);
-echo '<div class="row">';
-// 3. on lance la boucle !
-if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post();
+echo '<div class="container">
+    <div class="row">';
+        // 3. on lance la boucle !
+        if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post();
 
-                echo '<div class="equip-footer-col">
-                    <h6>';
-                    the_title();
-                    echo '</h6>';
+                        echo '<div class="col-4 text-center">
+                            <p>';
+                            the_title();
+                            echo '</p>';
 
-                    echo '<p>';
-                    the_post_thumbnail();
-                    echo '</p>';
+                            echo '<p>';
+                            the_post_thumbnail();
+                            echo '</p>';
 
-                    echo '<p><a href="' . get_post_meta($post->ID, '_personnes_linkedin', true) . '</a>'.get_post_meta($post->ID, '_personnes_linkedin', true).'</p>';
-                    echo '<p><a href="' . get_post_meta($post->ID, '_personnes_portfolio', true) . '</a>'.get_post_meta($post->ID, '_personnes_portfolio', true).'</p>';
-
-            
-    endwhile;
-endif;
-echo '</div>';
+                            echo '<p><a href="' . get_post_meta($post->ID, '_personnes_linkedin', true) . '" target="_blank">Linkedin</a></p>';
+                            echo '<p><a href="' . get_post_meta($post->ID, '_personnes_portfolio', true) . '" target="_blank">Portfolio</a></p>
+                        </div>';
+                    
+            endwhile;
+        endif;
+    echo '</div>
+</div>';
 
 // 4. On réinitialise à la requête principale (important)
 wp_reset_postdata();
