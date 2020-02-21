@@ -16,9 +16,9 @@
     ?>
 
             <div class="flip-card">
-                <div class="flip-card-inner" style='background-image: url("<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>"); background-size: cover;'>
+                <div class="flip-card-inner">
 
-                    <div class="flip-card-front">
+                    <div class="flip-card-front" style='background-image: url("<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>"); background-size: cover;'>
                         <h2><?php the_title(); ?></h2>
                        
 
