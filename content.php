@@ -1,5 +1,5 @@
 <!-- start partie trois derniers articles -->
-<div class="container d-flex justify-content-between pt-5 pb-4 lastarticles">
+<div class="container d-flex justify-content-between px-0 pt-5 pb-4 lastarticles">
 
     <?php
 
@@ -28,7 +28,7 @@
                         <h2><?php the_title(); ?></h2>
                         <!-- l'extrait -->
                         <p><?php the_excerpt(); ?></p>
-                        <p><a class=" class="text-decoration-none"" href="<?php echo get_post_permalink() ?>">Lire l'article</a></p>
+                        <p><a class=" class=" text-decoration-none"" href="<?php echo get_post_permalink() ?>">Lire l'article</a></p>
                         <!-- la catégorie -->
                         <p>
                             <?php foreach ((get_the_category()) as $category) {
@@ -61,7 +61,7 @@
             </div>
         </div>
 
-        <div class="col-8 right-projet">
+        <div class="col-8 right-projet pr-0">
             <div class="col-12 right-up position-relative">
                 <div class="div-hover-text position-absolute">
                     <div class="text-hover"><a class="text-decoration-none text-white" href=""> Voir le projet</a></div>
@@ -76,12 +76,15 @@
     </div>
 </div>
 <!-- end partie trois projets -->
+<div class="container p-0">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.4455173375673!2d6.149653515872332!3d47.6369086938766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4792f28ac3c7562f%3A0x428752472fa42de6!2s19%20Rue%20de%20Praley%2C%2070000%20Vesoul!5e0!3m2!1sfr!2sfr!4v1582295236057!5m2!1sfr!2sfr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>
 
 
 </div>
 <div class="container">
     <div class="row">
-    <p class="blog-post-meta"><?php the_date(); ?> par <a href="#"><?php the_author(); ?></a></p>
-    <?php the_content(); ?>
+        <p class="blog-post-meta"><?php the_date(); ?> par <a href="#"><?php the_author(); ?></a></p>
+        <?php the_content(); ?>
     </div>
 </div><!-- /.blog-post -->
