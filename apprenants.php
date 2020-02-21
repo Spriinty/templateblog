@@ -33,8 +33,8 @@ if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_
                     the_post_thumbnail();
                     echo '</p>';
 
-                    echo '<p>' . get_post_meta($post->ID, '_personnes_age', true) . '</p>';
-                    echo '<p>' . get_post_meta($post->ID, '_personnes_ville', true) . '</p></div>';
+                    echo '<p><a href="' . get_post_meta($post->ID, '_personnes_linkedin', true) . '</a>'.get_post_meta($post->ID, '_personnes_linkedin', true).'</p>';
+                    echo '<p><a href="' . get_post_meta($post->ID, '_personnes_portfolio', true) . '</a>'.get_post_meta($post->ID, '_personnes_portfolio', true).'</p>';
 
             
     endwhile;
