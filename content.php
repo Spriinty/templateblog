@@ -1,3 +1,4 @@
+<!-- start partie trois derniers articles -->
 <div class="container d-flex justify-content-between lastarticles">
 
     <?php
@@ -19,11 +20,21 @@
 
                     <div class="flip-card-front">
                         <h2><?php the_title(); ?></h2>
-                        
+                        <p>
+                            <?php foreach ((get_the_category()) as $category)
+                                {echo '<ul class="list-unstyled"><li><a href="#">' . $category->cat_name . '</a></li></ul> ';} 
+                            ?>
+                        </p>
+
                     </div>
                     <div class="flip-card-back text-black">
                         <h2><?php the_title(); ?></h2>
-                        <p><?php the_category(); ?></p>
+                        <p>
+                            <?php foreach ((get_the_category()) as $category)
+                                {echo '<ul class="list-unstyled"><li><a href="#">' . $category->cat_name . '</a></li></ul> ';} 
+                            ?>
+                        </p>
+
 
                     </div>
                 </div>

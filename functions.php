@@ -1,5 +1,6 @@
 <?php
-register_nav_menus( array(
-'menu-principal' => 'Menu principal'
-) );
+    register_nav_menus( array(
+    'menu-principal' => 'Menu principal'
+    ) );
 ?>
+

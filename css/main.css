@@ -34,13 +34,12 @@ header{
   }
   
   .flip-card-front {
-    background-color: #bbb;
     color: black;
   }
   
   .flip-card-back {
    
-    color: white;
+    color: black;
     transform: rotateY(180deg);
   }
 
