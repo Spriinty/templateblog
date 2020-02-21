@@ -1,5 +1,5 @@
 <!-- start partie trois derniers articles -->
-<div class="container d-flex justify-content-between lastarticles">
+<div class="container d-flex justify-content-between lastarticles pt-5">
 
     <?php
 
@@ -26,7 +26,7 @@
                 
                     <div class="flip-card-back text-black">
                         <!-- le titre -->
-                        <h2><?php the_title(); ?></h2>
+                        <h4 class="p-3"><?php the_title(); ?></h4>
                         <!-- l'extrait -->
                         <p><?php the_excerpt(); ?></p>
                         <p><a class="text-decoration-none" href="<?php echo get_post_permalink() ?>">Lire l'article</a></p>

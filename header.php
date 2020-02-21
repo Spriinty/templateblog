@@ -29,6 +29,8 @@
 
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css">
     <link href="<?php bloginfo('template_directory'); ?>/css/main.css" rel="stylesheet">
+
+
     <!-- HTML5 shim et Respond.js pour supporter les éléments HTML5 pour Internet Explorer 8 -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -39,19 +41,30 @@
 </head>
 
 <body>
+    <div class="container p-3 ">
+        <div class="row">
+            <div class="col">
+                <p class="lead blog-description text-center p-3 logo"></p>
+            </div>
+        </div>
+    </div>
+    <div class="container pb-3 ">
+        <nav id="navigation-principale" role="navigation">
+            <a class="active a_nav" href="#">Accueil</a>
+            <a class=" a_nav" href="#">Articles</a>
+            <a class=" a_nav" href="#">Projets</a>
+            <a class=" a_nav" href="#">Contact</a>
+        </nav>
+    </div>
     <!-- DEBUT BLOC HEADER -->
-    <header class="container-fluid bg-lol text-white blog-header">
-        <div class="container">
-            <h1 class="blog-title"><a href="<?php echo get_bloginfo('wpurl'); ?>"><?php echo get_bloginfo('name'); ?></a></h1>
-            <p class="lead blog-description"><?php echo get_bloginfo('description'); ?></p>
+    <header class="container bg-lol text-white blog-header">
+
+        <div class="row p-5">
+            <div class="col-4 pl-0">
+                <h4 class="titre_header">Gitbreackers</h4>
+            </div>
         </div>
-        <div class="container">
-            <nav id="navigation-principale" role="navigation">
-                <a class="active" href="#">Accueil</a>
-                <a href="#">Services</a>
-                <a href="#">À Propos</a>
-                <a href="#">Contact</a>
-            </nav>
         </div>
+
     </header>
     <!-- FIN BLOC HEADER -->

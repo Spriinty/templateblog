@@ -1,15 +1,32 @@
 
-
+@import url('https://fonts.googleapis.com/css?family=Candal&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
 header{
-    min-height: 50vh;
-      background-image: url(../media/workplace-2303853_1920.jpg); 
+    min-height:65vh;
+      background-image: url(../assets/header-blog.jpg); 
       background-size: cover;
       background-position: center;
 }
+.titre_header{
+font-size: 8.5rem;
+padding-top: 100px;
+}
 
 
+.logo{
+background-image: url(../assets/logo.png);
+background-repeat: no-repeat;
+height: 20vh;
+background-position-x: center;
+
+}
 /* start page article */
-
+.lastarticles{
+  padding-right: 0;
+  padding-left: 0;
+}
 .flip-card {
     background-color: transparent;
     width: 300px;
@@ -39,9 +56,10 @@ header{
     backface-visibility: hidden;
   }
   h2{
-    padding-top: 70px;
+    padding-top: 80px;
     font-family: 'Candal';
     font-size: 3rem;
+    color:rgba(134, 114, 114, 0.87) !important;
   }
   
   .flip-card-front {
@@ -50,19 +68,25 @@ header{
     color: black;
   }
 
-
-a {
+  .a_nav {
 
   padding: 106px;
   color: #ca9b52;
+  font-family: 'Satisfy' !important;
+  font-size: 1.2rem;
 }
-a:hover{
+.a_nav:hover{
   color: #8f8f8f;
 }
+
   .flip-card-back {
    
     color: black;
     transform: rotateY(180deg);
+  }
+  .first-letter{
+ font-size: 30px;
+ font-weight: bold;
   }
 
 /* end page article */
