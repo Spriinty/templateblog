@@ -124,14 +124,14 @@ function personnes_save_meta_box_data( $post_id ){
 
 	// store custom fields values
 	// age string
-	if ( isset( $_REQUEST['age'] ) ) {
-		update_post_meta( $post_id, '_personnes_linkedin', sanitize_text_field( $_POST['age'] ) );
+	if ( isset( $_REQUEST['linkedin'] ) ) {
+		update_post_meta( $post_id, '_personnes_linkedin', sanitize_text_field( $_POST['linkedin'] ) );
 	}
 	
 	// store custom fields values
 	// ville string
-	if ( isset( $_REQUEST['ville'] ) ) {
-		update_post_meta( $post_id, '_personnes_portfolio', sanitize_text_field( $_POST['ville'] ) );
+	if ( isset( $_REQUEST['portfolio'] ) ) {
+		update_post_meta( $post_id, '_personnes_portfolio', sanitize_text_field( $_POST['portfolio'] ) );
     }
 }
 add_action( 'save_post_personnes', 'personnes_save_meta_box_data' );
