@@ -36,7 +36,7 @@ function wpm_custom_post_type()
 
     $args = array(
         'label'               => __('Personnes'),
-        'description'         => __('Tout tout tout'),
+        'description'         => __('Toutes les personnes de la promo 33 de Vesoul à OnlineFormaPro'),
         'labels'              => $labels,
         'menu_icon'      => 'dashicons-id-alt',
         // On définit les options disponibles dans l'éditeur de notre custom post type ( un titre, un âge etc...)
@@ -80,21 +80,21 @@ function personnes_build_meta_box($post)
     // retrieve the _personnes_nom current value
     // $current_nom = get_post_meta($post->ID, '_personnes_nom', true);
 
-    // retrieve the _personnes_age current value
-    $current_age = get_post_meta($post->ID, '_personnes_age', true);
+    // retrieve the _personnes_linkedin current value
+    $linkedin = get_post_meta($post->ID, '_personnes_linkedin', true);
 
-    $villes = get_post_meta($post->ID, '_personnes_ville', true);
+    $portfolio = get_post_meta($post->ID, '_personnes_portfolio', true);
     
 
 ?>
     <div class='inside'>
-        <h3><?php _e('age', 'personnes_example_plugin'); ?></h3>
+        <h3><?php _e('linkedin', 'personnes_example_plugin'); ?></h3>
         <p>
-            <input type="text" name="age" value="<?php echo $current_age; ?>" />
+            <input type="text" name="linkedin" value="<?php echo $linkedin; ?>" />
         </p>
-        <h3><?php _e('ville', 'personnes_example_plugin'); ?></h3>
+        <h3><?php _e('portfolio', 'personnes_example_plugin'); ?></h3>
         <p>
-            <input type="text" name="ville" value="<?php echo $villes; ?>" />
+            <input type="text" name="portfolio" value="<?php echo $portfolio; ?>" />
         </p>
     </div>
 <?php
@@ -125,13 +125,13 @@ function personnes_save_meta_box_data( $post_id ){
 	// store custom fields values
 	// age string
 	if ( isset( $_REQUEST['age'] ) ) {
-		update_post_meta( $post_id, '_personnes_age', sanitize_text_field( $_POST['age'] ) );
+		update_post_meta( $post_id, '_personnes_linkedin', sanitize_text_field( $_POST['age'] ) );
 	}
 	
 	// store custom fields values
 	// ville string
 	if ( isset( $_REQUEST['ville'] ) ) {
-		update_post_meta( $post_id, '_personnes_ville', sanitize_text_field( $_POST['ville'] ) );
+		update_post_meta( $post_id, '_personnes_portfolio', sanitize_text_field( $_POST['ville'] ) );
     }
 }
 add_action( 'save_post_personnes', 'personnes_save_meta_box_data' );
