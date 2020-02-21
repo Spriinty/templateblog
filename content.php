@@ -28,14 +28,12 @@
                         <h2><?php the_title(); ?></h2>
                         <!-- l'extrait -->
                         <p><?php the_excerpt(); ?></p>
+                        <p><a class="text-decoration-none" href="<?php echo get_post_permalink() ?>">Lire l'article</a></p>
                         <!-- la catégorie -->
                         <p>
                             <?php foreach ((get_the_category()) as $category)
-                                {echo '<ul class="list-unstyled"><li><a href="#">' . $category->cat_name . '</a></li></ul> ';} 
+                                {echo '<ul class="list-unstyled"><li><a class="text-decoration-none" href="#">' . $category->cat_name . '</a></li></ul> ';} 
                             ?>
-                        </p>
-                        <p>
-                            <?php get_post_thumbnail_id();?>
                         </p>
 
 
