@@ -18,9 +18,9 @@
                 <div class="flip-card-inner">
 
                     <div class="flip-card-front">
-                        <h2><?php the_title(); ?></h2>
-                        
+                        <h2><?php the_title(); ?></h2>  
                     </div>
+                
                     <div class="flip-card-back text-black">
                         <h2><?php the_title(); ?></h2>
                         <p><?php the_category(); ?></p>

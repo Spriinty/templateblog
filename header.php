@@ -40,7 +40,7 @@
 
 <body>
     <!-- DEBUT BLOC HEADER -->
-    <header class="container-fluid bg-dark text-white blog-header">
+    <header class="container-fluid bg-lol text-white blog-header">
         <div class="container">
             <h1 class="blog-title"><a href="<?php echo get_bloginfo('wpurl'); ?>"><?php echo get_bloginfo('name'); ?></a></h1>
             <p class="lead blog-description"><?php echo get_bloginfo('description'); ?></p>

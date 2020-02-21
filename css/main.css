@@ -1,6 +1,12 @@
+
+
 header{
     min-height: 50vh;
+      background-image: url(../media/workplace-2303853_1920.jpg); 
+      background-size: cover;
+      background-position: center;
 }
+
 
 /* start page article */
 
@@ -32,12 +38,27 @@ header{
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
-  
-  .flip-card-front {
-    background-color: #bbb;
-    color: black;
+  h2{
+    padding-top: 70px;
+    font-family: 'Candal';
+    font-size: 3rem;
   }
   
+  .flip-card-front {
+    background-image:url(../media/three_js.jpg);
+    background-size:cover;
+    color: black;
+  }
+
+
+a {
+
+  padding: 106px;
+  color: #ca9b52;
+}
+a:hover{
+  color: #8f8f8f;
+}
   .flip-card-back {
    
     color: white;
