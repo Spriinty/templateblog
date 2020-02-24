@@ -67,18 +67,20 @@
           </ul>
     <div class="container ">
         <div class="row">
-            <div class="col">
-                <p class="lead blog-description text-center p-3 pb-0 logo"></p>
+            <div class="col d-flex justify-content-center mb-4">
+                <img class="img-fluid" src="<?php echo get_template_directory_uri();?>/assets/logo.png" alt="logo de la promotion des gitBreakers"/>
             </div>
         </div>
     </div>
-    <div class="container pb-3 ">
-        <nav id="navigation-principale" role="navigation">
-            <a class="active a_nav" href="#">Accueil</a>
-            <a class=" a_nav" href="#">Articles</a>
-            <a class=" a_nav" href="#">Projets</a>
-            <a class=" a_nav" href="#">Contact</a>
-        </nav>
+    <div class="container pb-3 pl-0 pr-0">
+
+        <?php
+            wp_nav_menu(array(
+                'theme_location' => 'menu_principal',
+                'container_class' => 'custom-menu-class'
+            ));
+        ?>
+
     </div>
     <!-- DEBUT BLOC HEADER -->
     <header class="container bg-lol text-white blog-header">

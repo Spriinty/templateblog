@@ -21,28 +21,25 @@ $args = array(
 // 2. on exécute la query
 $my_query = new WP_Query($args);
 echo '<div class="container">
-    <div class="row pt-5 justify-content-between">';
-        // 3. on lance la boucle !
-        if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post();
+        <div class="row">';
+// 3. on lance la boucle !
+if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post();
+?>
 
-                        echo '<div class="col-3 mb-5 text-center bg-white">
-                            <p>';
-                            the_title();
-                            echo '</p>';
+        <div class="col-3 text-center">
+            <p><?php the_title(); ?></p>
+            <p><?php the_post_thumbnail(array('class' => "img-fluid")); ?></p>
+            <div class="d-flex">
+                <p><a href="' . get_post_meta($post->ID, '_personnes_linkedin', true) . '" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></p>
+                <p>
+                    <a href="' . get_post_meta($post->ID, '_personnes_portfolio', true) . '" target="_blank"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/briefcase.png" alt="logo portfolio" /></a>
+                </p>
+            </div>
+        </div>
 
-                            echo '<p>';
-                            the_post_thumbnail(array('class'=>"img-fluid"));
-                            echo '</p>';
-
-                            echo '<p><a href="' . get_post_meta($post->ID, '_personnes_linkedin', true) . '" target="_blank">Linkedin</a></p>';
-                            echo '<p><a href="' . get_post_meta($post->ID, '_personnes_portfolio', true) . '" target="_blank">Portfolio</a></p>
-                        </div>';
-                    
-            endwhile;
-        endif;
-    echo '</div>
-</div>';
-
+<?php
+    endwhile;
+endif;
 // 4. On réinitialise à la requête principale (important)
 wp_reset_postdata();
 

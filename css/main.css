@@ -40,7 +40,38 @@ text-shadow:2px 2px  #000000;
 }
 /* end header  */
 
-/* start partie article */
+/* start menu */
+#menu-menu-principal{
+  list-style-type: none;
+  padding-left:0;
+  display: flex;
+  justify-content:space-between;
+}
+
+.a_nav a {
+  text-decoration:none;
+  text-align: center;
+  color: #ca9b52;
+  font-family: 'Satisfy' !important;
+  font-size: 1.2rem;
+}
+.a_nav a:hover{
+  color: #8f8f8f;
+}
+/* end menu */
+
+.logo{
+background-image: url(../assets/logo.png);
+background-repeat: no-repeat;
+height: 20vh;
+background-position-x: center;
+
+}
+/* start page article */
+.lastarticles{
+  padding-right: 0;
+  padding-left: 0;
+}
 .flip-card {
     background-color: transparent;
     width: 300px;
@@ -80,17 +111,6 @@ text-shadow:2px 2px  #000000;
     background-size:cover;
     color: black;
   }
-
-  .a_nav {
-
-  padding: 106px;
-  color: #ca9b52;
-  font-family: 'Satisfy' !important;
-  font-size: 1.2rem;
-}
-.a_nav:hover{
-  color: #8f8f8f;
-}
 
   .flip-card-back {
    
@@ -173,6 +193,12 @@ font-family: 'Indie Flower';
   color: white;
   font-size: 16px;
   padding: 16px 32px;
+}
+
+.img-project {
+  height: 400px;
+  width: 100%;
+  background-color: #8d8c8afb;
 }
 /***********footer************/
 .bg-footer{
