@@ -15,6 +15,24 @@ padding-top: 100px;
 }
 /* end header  */
 
+/* start menu */
+#menu-menu-principal{
+  list-style-type: none;
+  padding-left:0;
+  display: flex;
+  justify-content:space-between;
+}
+
+.a_nav a {
+  text-decoration:none;
+  color: #ca9b52;
+  font-family: 'Satisfy' !important;
+  font-size: 1.2rem;
+}
+.a_nav a:hover{
+  color: #8f8f8f;
+}
+/* end menu */
 
 .logo{
 background-image: url(../assets/logo.png);
@@ -67,17 +85,6 @@ background-position-x: center;
     background-size:cover;
     color: black;
   }
-
-  .a_nav {
-
-  padding: 106px;
-  color: #ca9b52;
-  font-family: 'Satisfy' !important;
-  font-size: 1.2rem;
-}
-.a_nav:hover{
-  color: #8f8f8f;
-}
 
   .flip-card-back {
    

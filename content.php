@@ -23,13 +23,12 @@
 
 
                     </div>
-                
                     <div class="flip-card-back text-black">
                         <!-- le titre -->
-                        <h4 class="p-3"><?php the_title(); ?></h4>
+                        <h2><?php the_title(); ?></h2>
                         <!-- l'extrait -->
                         <p><?php the_excerpt(); ?></p>
-                        <p><a class=" class=" text-decoration-none"" href="<?php echo get_post_permalink() ?>">Lire l'article</a></p>
+                        <p><a class="text-decoration-none" href="<?php echo get_post_permalink() ?>">Lire l'article</a></p>
                         <!-- la catégorie -->
                         <p>
                             <?php foreach ((get_the_category()) as $category) {

@@ -49,12 +49,14 @@
         </div>
     </div>
     <div class="container pb-3 ">
-        <nav id="navigation-principale" role="navigation">
-            <a class="active a_nav" href="#">Accueil</a>
-            <a class=" a_nav" href="#">Articles</a>
-            <a class=" a_nav" href="#">Projets</a>
-            <a class=" a_nav" href="#">Contact</a>
-        </nav>
+
+        <?php
+            wp_nav_menu(array(
+                'theme_location' => 'menu_principal',
+                'container_class' => 'custom-menu-class'
+            ));
+        ?>
+
     </div>
     <!-- DEBUT BLOC HEADER -->
     <header class="container bg-lol text-white blog-header">
