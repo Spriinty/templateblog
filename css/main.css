@@ -4,7 +4,9 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
 
-
+.min-h-20vh{
+  min-height: 20vh;
+}
 
 .logo{
   background-image: url(../assets/logo.png);
