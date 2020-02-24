@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: Accueil
+*/
+
+    get_header(); ?>
 <!-- DEBUT BLOC CONTENT -->
 <div class="container">
     <div class="row">
