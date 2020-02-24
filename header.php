@@ -68,7 +68,7 @@
     <div class="container ">
         <div class="row">
             <div class="col">
-                <p class="lead blog-description text-center p-3 pb-0 logo"></p>
+                <p class="lead blog-description text-center mb-0 p-3 pb-0 logo"></p>
             </div>
         </div>
     </div>

@@ -61,21 +61,23 @@
         </div>
     </div>
     <div class="row ">
-        <div class="col-4 left-projet position-relative">
-            <div class="div-hover-text position-absolute">
-                <div class="text-hover"><a class="text-decoration-none text-white" href="https://desireeb.promo-vesoul33.codeur.online/kingburger/"> Voir le projet</a></div>
+        <div class="col-4 position-relative">
+            <div class="pr-2 left-projet">
+                <div class="div-hover-text position-absolute">
+                    <div class="text-hover">  <i class="fa fa-link " aria-hidden="true"></i><a class="text-decoration-none text-white" href="https://desireeb.promo-vesoul33.codeur.online/kingburger/"> BURGER</a></div>
+                </div>
             </div>
         </div>
 
         <div class="col-8 right-projet pr-0">
             <div class="col-12 right-up position-relative">
                 <div class="div-hover-text position-absolute">
-                    <div class="text-hover"><a class="text-decoration-none text-white" href="https://quentinp364.promo-vesoul33.codeur.online/automotive/index.html"> Voir le projet</a></div>
+                    <div class="text-hover">  <i class="fa fa-link " aria-hidden="true"></i><a class="text-decoration-none text-white" href="https://quentinp364.promo-vesoul33.codeur.online/automotive/index.html"> Automotive</a></div>
                 </div>
             </div>
             <div class="col-12 right-down position-relative ">
                 <div class="div-hover-text position-absolute">
-                    <div class="text-hover"><a class="text-decoration-none text-white" href=""> Voir le projet</a></div>
+                    <div class="text-hover">  <i class="fa fa-link " aria-hidden="true"></i><a class="text-decoration-none text-white" href=""> CINÉ </a></div>
                 </div>
             </div>
         </div>
@@ -90,7 +92,6 @@
 </div>
 <div class="container pb-5">
     <div class="row">
-        <p class="blog-post-meta"><?php the_date(); ?> par <a href="#"><?php the_author(); ?></a></p>
-        <?php the_content(); ?>
+
     </div>
-</div><!-- /.blog-post -->
+</div>
