@@ -1,9 +1,11 @@
 <?php
 
-function navigation_menu() {
-    register_nav_menu('menu_principal',__( 'Menu principal' ));
-  }
-add_action( 'init', 'navigation_menu' );
+
+
+// function navigation_menu() {
+//     register_nav_menu('menu_principal',__( 'Menu principal' ));
+//   }
+// add_action( 'init', 'navigation_menu' );
 
 add_theme_support('post-thumbnails');
 
@@ -257,3 +259,9 @@ function projets_save_meta_box_data($post_id)
 add_action('save_post_projets', 'projets_save_meta_box_data');
 
 // end custom post type personnes
+
+require get_template_directory() . '/bootstrap-navwalker.php';
+
+register_nav_menus( array(
+    'primary' => esc_html__( 'Primary', 'theme-textdomain' ),
+) );

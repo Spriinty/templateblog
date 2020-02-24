@@ -10,7 +10,7 @@
 .logo {
   background-image: url(../assets/logo.png);
   background-repeat: no-repeat;
-  height: 20vh;
+  min-height: 25vh;
   background-position-x: center;
 }
 
@@ -146,12 +146,12 @@ h2 {
   text-align: center;
 }
 
-.left-projet {
-  height: 635px;
-  background-image: url(../assets/burger-blog.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.left-projet{
+  height: 633px;
+ background-image: url(../assets/burger-blog.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
 }
 
 .left-projet:hover .image {
@@ -168,9 +168,8 @@ h2 {
   color: #8f8f8f;
   font-family: 'Indie Flower';
 }
-
-.section-projet {
-  height: 90vh;
+.section-projet{
+  min-height:100vh ;
   background-color: #eee3d338;
 }
 
@@ -208,12 +207,29 @@ h2 {
 }
 
 .text-hover {
-  color: white;
-  font-size: 16px;
+
+  font-size: 3rem;
   padding: 16px 32px;
+  font-family: 'Indie Flower' ;
+  color:rgba(134, 114, 114, 0.87) !important;
 }
 
 /***********footer************/
-.bg-footer {
-  background-color: #eee3d338;
+.bg-footer{
+ background-color: #eee3d338; 
 }
+.title-footer{
+color:  #8f8f8f;
+font-family: 'Indie Flower' !important;
+font-size: 1rem;
+}
+
+
+
+.lettrine {
+  font-size:3.5em;
+  padding-right:0.2em;
+  float:left;
+  color:red;
+}
+
