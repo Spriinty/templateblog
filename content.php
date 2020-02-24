@@ -23,9 +23,10 @@
 
 
                     </div>
+                
                     <div class="flip-card-back text-black">
                         <!-- le titre -->
-                        <h2><?php the_title(); ?></h2>
+                        <h4 class="p-3"><?php the_title(); ?></h4>
                         <!-- l'extrait -->
                         <p><?php the_excerpt(); ?></p>
                         <p><a class=" class=" text-decoration-none"" href="<?php echo get_post_permalink() ?>">Lire l'article</a></p>
