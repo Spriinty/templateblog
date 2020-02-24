@@ -32,7 +32,7 @@ if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_
             <div class="d-flex">
                 <p><a href="' . get_post_meta($post->ID, '_personnes_linkedin', true) . '" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></p>
                 <p>
-                    <a href="' . get_post_meta($post->ID, '_personnes_portfolio', true) . '" target="_blank"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/briefcase.png" alt="logo portfolio" /></a>
+                    <a href="' . get_post_meta($post->ID, '_personnes_portfolio', true) . '" target="_blank"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/github.png"/></a>
                 </p>
             </div>
         </div>

@@ -85,7 +85,7 @@ function personnes_build_meta_box($post)
     // retrieve the _personnes_linkedin current value
     $linkedin = get_post_meta($post->ID, '_personnes_linkedin', true);
 
-    $portfolio = get_post_meta($post->ID, '_personnes_portfolio', true);
+    $github = get_post_meta($post->ID, '_personnes_github', true);
 
 
 ?>
@@ -94,9 +94,9 @@ function personnes_build_meta_box($post)
         <p>
             <input type="text" name="linkedin" value="<?php echo $linkedin; ?>" />
         </p>
-        <h3><?php _e('portfolio', 'personnes_example_plugin'); ?></h3>
+        <h3><?php _e('github', 'personnes_example_plugin'); ?></h3>
         <p>
-            <input type="text" name="portfolio" value="<?php echo $portfolio; ?>" />
+            <input type="text" name="github" value="<?php echo $github; ?>" />
         </p>
     </div>
 <?php
@@ -133,8 +133,8 @@ function personnes_save_meta_box_data($post_id)
 
     // store custom fields values
     // ville string
-    if (isset($_REQUEST['portfolio'])) {
-        update_post_meta($post_id, '_personnes_portfolio', sanitize_text_field($_POST['portfolio']));
+    if (isset($_REQUEST['github'])) {
+        update_post_meta($post_id, '_personnes_github', sanitize_text_field($_POST['github']));
     }
 }
 add_action('save_post_personnes', 'personnes_save_meta_box_data');
