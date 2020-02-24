@@ -84,10 +84,59 @@ background-position-x: center;
     color: black;
     transform: rotateY(180deg);
   }
+
+  /* fin partie articles */
   .first-letter{
  font-size: 30px;
  font-weight: bold;
   }
+
+
+
+/* start partie projets */
+.div-hover-text {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.left-projet{
+  height: 400px;
+  background-color: red;
+}
+.left-projet:hover .image {
+  opacity: 0.3;
+}
+.left-projet:hover .div-hover-text {
+  opacity: 1;
+}
+
+.right-up{
+  height: 200px;
+  background-color: green;
+}
+.right-up:hover .image {
+  opacity: 0.3;
+}
+.right-up:hover .div-hover-text {
+  opacity: 1;
+}
+
+.right-down{
+  height: 200px;
+  background-color: purple;
+}
+.right-down:hover .image {
+  opacity: 0.3;
+}
+.right-down:hover .div-hover-text {
+  opacity: 1;
+}
 
 .text-hover {
   color: white;
