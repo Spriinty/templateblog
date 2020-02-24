@@ -29,6 +29,7 @@
 
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css">
     <link href="<?php bloginfo('template_directory'); ?>/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
     <!-- HTML5 shim et Respond.js pour supporter les éléments HTML5 pour Internet Explorer 8 -->
@@ -41,10 +42,33 @@
 </head>
 
 <body>
-    <div class="container p-3 ">
+
+<ul class='social mb-0'>
+            <li class='facebook'>
+              <a>
+                <i class='fa fa-lg fa-facebook-official'></i>
+              </a>
+            </li>
+            <li class='instagram'>
+              <a>
+                <i class='fa fa-lg fa-instagram'></i>
+              </a>
+            </li>
+            <li class='linkedin'>
+              <a>
+                <i class='fa fa-lg fa-linkedin'></i>
+              </a>
+            </li>
+            <li class='twitter fafatwit'>
+              <a>
+                <i class='fa fa-lg fa-twitter'></i>
+              </a>
+            </li>
+          </ul>
+    <div class="container ">
         <div class="row">
             <div class="col">
-                <p class="lead blog-description text-center p-3 logo"></p>
+                <p class="lead blog-description text-center p-3 pb-0 logo"></p>
             </div>
         </div>
     </div>
@@ -60,8 +84,8 @@
     <header class="container bg-lol text-white blog-header">
 
         <div class="row p-5">
-            <div class="col-4 pl-0">
-                <h4 class="titre_header">Gitbreackers</h4>
+            <div class="col-12 pl-0 text-center">
+                <h4 class="titre_header">Gitbreakers</h4>
             </div>
         </div>
         </div>
