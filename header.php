@@ -43,28 +43,28 @@
 
 <body>
 
-<ul class='social mb-0'>
-            <li class='facebook'>
-              <a>
+    <ul class='social mb-0'>
+        <li class='facebook'>
+            <a>
                 <i class='fa fa-lg fa-facebook-official'></i>
-              </a>
-            </li>
-            <li class='instagram'>
-              <a>
+            </a>
+        </li>
+        <li class='instagram'>
+            <a>
                 <i class='fa fa-lg fa-instagram'></i>
-              </a>
-            </li>
-            <li class='linkedin'>
-              <a>
+            </a>
+        </li>
+        <li class='linkedin'>
+            <a>
                 <i class='fa fa-lg fa-linkedin'></i>
-              </a>
-            </li>
-            <li class='twitter fafatwit'>
-              <a>
+            </a>
+        </li>
+        <li class='twitter fafatwit'>
+            <a>
                 <i class='fa fa-lg fa-twitter'></i>
-              </a>
-            </li>
-          </ul>
+            </a>
+        </li>
+    </ul>
     <div class="container ">
         <div class="row">
             <div class="col">
@@ -73,6 +73,28 @@
         </div>
     </div>
     <div class="container pb-3 ">
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <?php
+                wp_nav_menu(array(
+                    'theme_location'    => 'primary',
+                    'depth'             => 2,
+                    'container'         => 'div',
+                    'container_class'   => 'collapse navbar-collapse',
+                    'container_id'      => 'bs-example-navbar-collapse-1',
+                    'menu_class'        => 'nav navbar-nav',
+                    'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+
+                ));
+                ?>
+            </div>
+        </nav>
         <nav id="navigation-principale" role="navigation">
             <a class="active a_nav" href="#">Accueil</a>
             <a class=" a_nav" href="#">Articles</a>

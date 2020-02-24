@@ -70,7 +70,7 @@ text-shadow:2px 2px  #000000;
   }
   h2{
     padding-top: 80px;
-    font-family: 'Indie Flower' ;
+    font-family: 'Pacifico' ;
     font-size: 3rem;
     color:rgba(134, 114, 114, 0.87) !important;
   }
@@ -180,3 +180,18 @@ font-family: 'Indie Flower';
 .bg-footer{
  background-color: #eee3d338; 
 }
+.title-footer{
+color:  #8f8f8f;
+font-family: 'Indie Flower' !important;
+font-size: 1rem;
+}
+
+
+
+.lettrine {
+  font-size:3.5em;
+  padding-right:0.2em;
+  float:left;
+  color:red;
+}
+

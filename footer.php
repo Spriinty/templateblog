@@ -1,7 +1,7 @@
 
     <!-- DEBUT BLOC FOOTER -->
     <footer class="blog-footer bg-footer text-center mb-0">
-        <p class="mb-0 p-5">©Copyright</p>
+        <p class="mb-0 p-5 title-footer">©Copyright</p>
     </footer>
     <!-- FIN BLOC FOOTER -->
     <script src="js/jquery.js"></script>

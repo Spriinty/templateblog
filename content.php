@@ -72,7 +72,7 @@
         <div class="col-8 right-projet pr-0">
             <div class="col-12 right-up position-relative">
                 <div class="div-hover-text position-absolute">
-                    <div class="text-hover">  <i class="fa fa-link " aria-hidden="true"></i><a class="text-decoration-none text-white" href="https://quentinp364.promo-vesoul33.codeur.online/automotive/index.html"> Automotive</a></div>
+                    <div class="text-hover"> <i class="fa fa-link " aria-hidden="true"></i><a class="text-decoration-none text-white" href="https://quentinp364.promo-vesoul33.codeur.online/automotive/index.html"> Automotive </a></div>
                 </div>
             </div>
             <div class="col-12 right-down position-relative ">
