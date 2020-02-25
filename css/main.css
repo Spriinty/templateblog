@@ -100,7 +100,7 @@ background-position-x: center;
     backface-visibility: hidden;
   }
   h2{
-    padding-top: 80px;
+  
     font-family: 'Indie Flower' ;
     font-size: 3rem;
     color:rgba(134, 114, 114, 0.87) !important;
@@ -195,11 +195,7 @@ font-family: 'Indie Flower';
   padding: 16px 32px;
 }
 
-.img-project {
-  height: 400px;
-  width: 100%;
-  background-color: #8d8c8afb;
-}
+
 /***********footer************/
 .bg-footer{
  background-color: #eee3d338; 
