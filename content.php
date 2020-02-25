@@ -19,13 +19,13 @@
                 <div class="flip-card-inner">
 
                     <div class="flip-card-front" style='background-image: url("<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>"); background-size: cover;'>
-                        <h2><?php the_title(); ?></h2>
+                        <h3 class="pt-80-px tite_aticle"><?php the_title(); ?></h3>
 
 
                     </div>
                     <div class="flip-card-back text-black">
                         <!-- le titre -->
-                        <h2><?php the_title(); ?></h2>
+                        <h3 class="pt-80-px tite_aticle"><?php the_title(); ?></h3>
                         <!-- l'extrait -->
                         <p><?php the_excerpt(); ?></p>
                         <p><a class="text-decoration-none" href="<?php echo get_post_permalink() ?>">Lire l'article</a></p>
@@ -102,31 +102,35 @@
 <!-- start partie réseaux sociaux -->
 
 <div class="container-fluid">
-    <div class="container">
-        <div class="row d-flex justify-content-center pt-3 pb-3">
-            <ul class='social mb-0 p-0'>
-                <li class='facebook'>
-                    <a>
-                        <i class='fa fa-lg fa-facebook-official'></i>
-                    </a>
-                </li>
-                <li class='instagram'>
-                    <a>
-                        <i class='fa fa-lg fa-instagram'></i>
-                    </a>
-                </li>
-                <li class='linkedin'>
-                    <a>
-                        <i class='fa fa-lg fa-linkedin'></i>
-                    </a>
-                </li>
-                <li class='twitter fafatwit'>
-                    <a>
-                        <i class='fa fa-lg fa-twitter'></i>
-                    </a>
-                </li>
-            </ul>
-
+    <div class="container bg-nude py-5">
+        <div class="row fa-shadow">
+            <div class="col-6 text-contact ">
+            <h2>Retrouvez-nous sur les réseaux</h2>
+            </div>
+            <div class="col-6">
+                <ul class='social justify-content-end mb-0 h-100 align-items-center'>
+                    <li class='facebook  px-3'>
+                        <a>
+                            <i class='fa fa-lg fa-facebook-official'></i>
+                        </a>
+                    </li>
+                    <li class='instagram px-3 fa-shadow'>
+                        <a>
+                            <i class='fa fa-lg fa-instagram'></i>
+                        </a>
+                    </li>
+                    <li class='linkedin px-3 fa-shadow'>
+                        <a>
+                            <i class='fa fa-lg fa-linkedin'></i>
+                        </a>
+                    </li>
+                    <li class='twitter fafatwit px-3 fa-shadow'>
+                        <a>
+                            <i class='fa fa-lg fa-twitter'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
