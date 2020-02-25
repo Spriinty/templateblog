@@ -29,16 +29,16 @@ li {
 
 header {
   min-height: 65vh;
-  background-image: url(../assets/header-blog.jpg);
+  background-image: url(../assets/header-img.jpg);
   background-size: cover;
-  background-position: center;
+  background-position-y:bottom;
 }
 
 .titre_header {
   font-size: 8.5rem;
-  padding-top: 165px;
   font-family: 'Pacifico';
-  text-shadow: 2px 2px #000000;
+  color:#fec325;
+  text-shadow: 2px 2px #ffffff;
 
 }
 
@@ -59,14 +59,18 @@ button:focus{
 .navbar-light .navbar-nav .nav-link {
   text-decoration:none;
   text-align: center;
-  color: #ca9b52;
+  color: #027373;
   font-family: 'Satisfy' !important;
   font-size: 1.2rem;
 }
 
 
 .navbar-light .navbar-nav .nav-link:hover{
-  color: #8f8f8f;
+  color: #f29f05;
+}
+
+.navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+  color: #f29f05;
 }
 /* end menu */
 
@@ -167,6 +171,15 @@ h2 {
   opacity: 1;
 }
 
+/* start description projets */
+
+.description{
+  background-color: #1c3144;
+}
+
+/* end description projets */
+
+
 /***************section projets*********************/
 .titre-projet {
   font-size: 4rem;
@@ -175,7 +188,7 @@ h2 {
 }
 .section-projet{
   min-height:100vh ;
-  background-color: #a8a59f75;
+  background-color: #fff;
 }
 
 .right-up {
