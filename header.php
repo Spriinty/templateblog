@@ -93,7 +93,7 @@
           'menu_id'        => 'Primary',
           'container'      => false,
           'depth'          => 2,
-          'menu_class'     => 'navbar-nav ml-auto',
+          'menu_class'     => 'navbar-nav w-100 justify-content-between',
           'walker'         => new Bootstrap_NavWalker(),
           'fallback_cb'    => 'Bootstrap_NavWalker::fallback',
         ));
