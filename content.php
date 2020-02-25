@@ -52,17 +52,30 @@
 </div>
 <!-- end partie trois derniers articles -->
 
-<!-- start partie trois projets -->
-<div class="container-fluid section-projet">
-
-    <div class="container  pt-5  px-5">
-        <div class="row ">
-            <div class="col-12 text-center">
-                <h1 class="titre-projet pb-5 m-0">Projets</h1>
+<!-- partie présentation des projet -->
+<div class="container-fluid">
+    <div class="container description  pt-5 pb-5 px-5">
+        <div class="row d-flex flex-column justify-content-center text-center">
+            <div class="col-12 p-0 text-white">
+                <h1 class="titre-projet text-center pb-4 m-0">Projets</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores praesentium facilis, tempora laboriosam amet aut. Qui pariatur esse veniam at saepe. Eveniet, fuga? Adipisci repellat suscipit quia natus dolorum?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, voluptatum at illum iure neque facilis dolores suscipit dolorum, tempore quibusdam ab eius voluptatem magnam natus repellat quam fuga provident sit.</p>
             </div>
         </div>
+    </div>
+</div>
+
+<!-- end presentation des projets -->
+
+
+
+
+<!-- start partie trois projets -->
+<div class="container-fluid section-projet pt-5 pb-5">
+
+    <div class="container">
         <div class="row ">
-            <div class="col-4 position-relative">
+            <div class="col-4 pl-0 position-relative">
                 <div class="pr-2 left-projet">
                     <div class="div-hover-text position-absolute">
                         <div class="text-hover"><a class="text-decoration-none text-white" href="https://desireeb.promo-vesoul33.codeur.online/kingburger/"><i class="fa fa-link text-hover " aria-hidden="true"></i> BURGER</a></div>
@@ -85,40 +98,53 @@
         </div>
     </div>
 </div>
+
+<!-- start partie réseaux sociaux -->
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="row d-flex justify-content-center pt-3 pb-3">
+            <ul class='social mb-0 p-0'>
+                <li class='facebook'>
+                    <a>
+                        <i class='fa fa-lg fa-facebook-official'></i>
+                    </a>
+                </li>
+                <li class='instagram'>
+                    <a>
+                        <i class='fa fa-lg fa-instagram'></i>
+                    </a>
+                </li>
+                <li class='linkedin'>
+                    <a>
+                        <i class='fa fa-lg fa-linkedin'></i>
+                    </a>
+                </li>
+                <li class='twitter fafatwit'>
+                    <a>
+                        <i class='fa fa-lg fa-twitter'></i>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- end partie réseaux sociaux -->
+
+
 <div class="container pt-5">
     <div class="row">
 
-    <div class="col-12 pl-0 pr-0">
+        <div class="col-12 pl-0 pr-0">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.4455173375673!2d6.149653515872332!3d47.6369086938766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4792f28ac3c7562f%3A0x428752472fa42de6!2s19%20Rue%20de%20Praley%2C%2070000%20Vesoul!5e0!3m2!1sfr!2sfr!4v1582295236057!5m2!1sfr!2sfr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
-        <div class="col-6">
-            <form>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputPassword4">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="inputAddress">Objet</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="Objet">
-                </div>
-                <div class="form-group">
-                    <label for="inputAddress2">Message</label>
-                    <textarea type="text" class="form-control" id="inputAddress2" placeholder="Entrez Votre message "></textarea>
-                </div>
-                <div class=" text-center p-3">
-                    <button type="submit" class="btn btn-primary ">Sign in</button></div>
-            </form>
-        </div>
-
 
         <!-- end partie trois projets -->
-       
+
     </div>
 </div>
 

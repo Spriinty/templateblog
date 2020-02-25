@@ -44,29 +44,6 @@
 
 <body>
 
-  <ul class='social mb-0'>
-    <li class='facebook'>
-      <a>
-        <i class='fa fa-lg fa-facebook-official'></i>
-      </a>
-    </li>
-    <li class='instagram'>
-      <a>
-        <i class='fa fa-lg fa-instagram'></i>
-      </a>
-    </li>
-    <li class='linkedin'>
-      <a>
-        <i class='fa fa-lg fa-linkedin'></i>
-      </a>
-    </li>
-    <li class='twitter fafatwit'>
-      <a>
-        <i class='fa fa-lg fa-twitter'></i>
-      </a>
-    </li>
-  </ul>
-
   <div class="container ">
     <div class="row">
       <div class="col d-flex justify-content-center mb-4">
@@ -101,14 +78,15 @@
 
 
   <!-- DEBUT BLOC HEADER -->
-  <header class="container bg-lol text-white blog-header">
 
-    <div class="row p-5">
-      <div class="col-12 pl-0 text-center">
-        <h4 class="titre_header">Gitbreakers</h4>
+  <header class="container-fluid d-flex flex-column justify-content-center">
+    <div class="container bg-lol text-white blog-header">
+      <div class="row">
+        <div class="col-12 p-0">
+          <h4 class="titre_header text-right">Gitbreakers</h4>
+        </div>
       </div>
+
     </div>
-
-
   </header>
   <!-- FIN BLOC HEADER -->
