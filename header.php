@@ -65,6 +65,7 @@
       </a>
     </li>
   </ul>
+
   <div class="container ">
     <div class="row">
       <div class="col d-flex justify-content-center mb-4">
@@ -72,15 +73,9 @@
       </div>
     </div>
   </div>
+
   <div class="container pb-3 pl-0 pr-0">
 
-    <?php
-    // wp_nav_menu(array(
-    //     'theme_location' => 'menu_principal',
-    //     'container_class' => 'custom-menu-class'
-    // ));
-
-    ?>
     <nav class="navbar navbar-expand-lg navbar-light ">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="<?php esc_html_e('Toggle Navigation', 'theme-textdomain'); ?>">
         <span class="navbar-toggler-icon"></span>
@@ -102,6 +97,8 @@
     </nav>
 
   </div>
+
+
   <!-- DEBUT BLOC HEADER -->
   <header class="container bg-lol text-white blog-header">
 
@@ -110,7 +107,7 @@
         <h4 class="titre_header">Gitbreakers</h4>
       </div>
     </div>
-    </div>
+
 
   </header>
   <!-- FIN BLOC HEADER -->

@@ -3,15 +3,15 @@
 Template Name: Accueil
 */
 
-    get_header(); ?>
+get_header(); ?>
 <!-- DEBUT BLOC CONTENT -->
-<div class="container">
-    <div class="row">
-        <?php
-                get_template_part('content', get_post_format());
-        ?>
+
+<main>
+    <?php
+    get_template_part('content', get_post_format());
+    ?>
     </div> <!-- /.blog-main -->
-</div> <!-- /.row -->
-</div>
+</main> <!-- /.row -->
+
 <!-- FIN BLOC CONTENT -->
 <?php get_footer(); ?>
