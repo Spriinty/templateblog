@@ -241,12 +241,14 @@ button:focus{
   color:#fff;
 }
 .bg-footer{
- background-color: #eee3d338; 
-}
+ background-color: #f0eae01a; 
+} 
 .title-footer{
 color:  #8f8f8f;
 font-family: 'Indie Flower' !important;
 font-size: 1rem;
 }
 
-
+.bordeur-top-footer{
+  border-top: 1px solid #F2B999;
+}
