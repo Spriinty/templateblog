@@ -57,7 +57,10 @@
     <div class="container description  pt-5 pb-5 px-5">
         <div class="row d-flex flex-column justify-content-center text-center">
             <div class="col-12 p-0 text-white">
+                <div>
                 <h1 class="titre-projet text-center pb-4 m-0">Projets</h1>
+                </div>
+                
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores praesentium facilis, tempora laboriosam amet aut. Qui pariatur esse veniam at saepe. Eveniet, fuga? Adipisci repellat suscipit quia natus dolorum?</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, voluptatum at illum iure neque facilis dolores suscipit dolorum, tempore quibusdam ab eius voluptatem magnam natus repellat quam fuga provident sit.</p>
             </div>
