@@ -52,8 +52,12 @@ get_header();
 </div>
 
 
+      <?php
+    // 4. On réinitialise à la requête principale (important)
+    wp_reset_postdata();
 
-
-<?php
-get_footer();
-?>
+    get_footer();
+      ?>
+        </div>
+  </div>
+</div>
