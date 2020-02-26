@@ -41,9 +41,9 @@ if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_
                     </div>
                     <div class="flip-card-back-apprenants">
                         <div class="d-flex justify-content-center">
-                            <p class="mb-0 mr-2"><a href="' . get_post_meta($post->ID, '_personnes_linkedin', true) . '" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></p>
+                            <p class="mb-0 mr-2"><a href="<?php get_post_meta($post->ID, '_personnes_linkedin', true) ?>" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></p>
                             <p class="mb-0 ml-2">
-                                <a href="' . get_post_meta($post->ID, '_personnes_portfolio', true) . '" target="_blank"><img class="img-fluid logo-github" src="<?php echo get_template_directory_uri(); ?>/assets/github.png" /></a>
+                                <a href="<?php get_post_meta($post->ID, '_personnes_portfolio', true) ?>" target="_blank"><img class="img-fluid logo-github" src="<?php echo get_template_directory_uri(); ?>/assets/github.png" /></a>
                             </p>
                         </div>
                         <div>

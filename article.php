@@ -1,14 +1,21 @@
 <?php
 /*
-  Template Name: Article
+  Template Name: Page-article
   Template Post Type: post, page, product
 */
+
 get_header();
 ?>
-<h1 class="text-center"><?php the_title(); ?></h1>
-<div class="main">
+<div class="container">
+  <div class="main">
 
+    <h1 class="raleway"><?php the_title(); ?></h1>
+
+
+
+  </div>
 </div>
+
 <?php
 get_footer();
 ?>
