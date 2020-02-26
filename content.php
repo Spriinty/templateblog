@@ -109,23 +109,23 @@
 
     <div class="container">
         <div class="row ">
-            <div class="col-4 pl-0 position-relative">
+            <div class=" col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 px-0 pr-lg-4 pr-xl-4 position-relative">
                 <div class="pr-2 left-projet">
-                    <div class="div-hover-text position-absolute">
-                        <div class="text-hover"><a class="text-decoration-none text-white" href="https://desireeb.promo-vesoul33.codeur.online/kingburger/"><i class="fa fa-link text-hover " aria-hidden="true"></i> BURGER</a></div>
+                    <div class="div-hover-text position-absolute w-100">
+                        <div class="text-hover"><a class="text-decoration-none text-white" href="https://desireeb.promo-vesoul33.codeur.online/kingburger/"><i class="fa fa-link text-hover  p-2 " aria-hidden="true"></i>Burger</a></div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-8 right-projet pr-0">
-                <div class="col-12 right-up position-relative">
-                    <div class="div-hover-text position-absolute">
-                        <div class="text-hover"> <a class="text-decoration-none text-white" href="https://quentinp364.promo-vesoul33.codeur.online/automotive/index.html"><i class="fa fa-link text-hover " aria-hidden="true"></i>Automotive </a></div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 right-projet  px-0">
+                <div class="col-12  right-up position-relative">
+                    <div class="div-hover-text position-absolute w-100">
+                        <div class="text-hover"> <a class="text-decoration-none text-white" href="https://quentinp364.promo-vesoul33.codeur.online/automotive/index.html"><i class="fa fa-link text-hover p-3" aria-hidden="true"></i>Automotive</a></div>
                     </div>
                 </div>
                 <div class="col-12 right-down position-relative ">
-                    <div class="div-hover-text position-absolute">
-                        <div class="text-hover"><a class="text-decoration-none text-white" href=""><i class="fa fa-link text-hover p-3" aria-hidden="true"></i>CINÉ </a></div>
+                    <div class="div-hover-text position-absolute w-100">
+                        <div class="text-hover"><a class="text-decoration-none text-white" href=""><i class="fa fa-link text-hover p-3" aria-hidden="true"></i>Ciné </a></div>
                     </div>
                 </div>
             </div>

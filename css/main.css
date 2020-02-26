@@ -261,7 +261,6 @@ button:focus{
 }
 
 .text-hover {
-
   font-size: 3rem;
   padding: 16px 32px;
   font-family: 'Indie Flower' ;
@@ -301,14 +300,36 @@ font-size: 1rem;
   .container-header-reseaux{
     width:100%;
   }
+  .left-projet{
+    height: 300px;
+    margin-bottom: 33px;
+    background-image: url(../assets/burger-blog.jpg);
+    background-repeat: no-repeat;
+   }
+   .div-hover-text {
+    opacity: 1; 
+  }
+  .text-hover {
+    font-size: 2rem; 
 }
-
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px)
 {
   .container-header-reseaux{
     width:98%;
   }
+  .left-projet{
+    height: 300px;
+    margin-bottom: 33px;
+    background-image: url(../assets/burger-blog.jpg);
+    background-repeat: no-repeat;
+  }
+  .div-hover-text {
+  
+    opacity: 1; 
+  }
+  
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -317,6 +338,17 @@ font-size: 1rem;
   .container-header-reseaux{
     width:98%;
   }
+  .left-projet{
+  height: 300px;
+  margin-bottom: 33px;
+  background-image: url(../assets/burger-blog.jpg);
+  background-repeat: no-repeat;
+ }
+ .div-hover-text {
+  
+  opacity: 1; 
+}
+
 }
 
 /* Large devices (desktops, 992px and up) */
