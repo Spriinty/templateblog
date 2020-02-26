@@ -44,17 +44,14 @@
 
 <body>
 
-  <div class="container ">
-    <div class="row">
-      <div class="col d-flex justify-content-center mb-4">
-        <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/logo.png" alt="logo de la promotion des gitBreakers" />
-      </div>
+  <div class="navbar-container d-flex pl-0 pr-0">
+
+    <nav class="navbar navbar-expand-lg navbar-light p-0 raleway w-100">
+
+    <div class="w-50 pl-4">
+      <img class="pt-3 pb-3 img-fluid logo" src="<?php echo get_template_directory_uri(); ?>/assets/logo-head.png" alt="logo de la promotion des gitBreakers" />
     </div>
-  </div>
 
-  <div class="container pb-3 pl-0 pr-0">
-
-    <nav class="navbar navbar-expand-lg navbar-light ">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="<?php esc_html_e('Toggle Navigation', 'theme-textdomain'); ?>">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -79,11 +76,11 @@
 
   <!-- DEBUT BLOC HEADER -->
 
-  <header class="container-fluid d-flex flex-column justify-content-center">
-    <div class="container bg-lol text-white blog-header">
-      <div class="row">
-        <div class="col-12 p-0">
-          <h4 class="titre_header text-right">Gitbreakers</h4>
+  <header class="container-fluid d-flex justify-content-center">
+    <div class="container-header-reseaux container-header-reseaux-height container-header-bg text-white">
+      <div class="row h-100">
+        <div class="col-6 offset-6 d-flex align-items-center p-0">
+          <h4 class="titre_header text-right pb-4">Gitbreakers</h4>
         </div>
       </div>
 

@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
-
-.font-family-flower{
-  font-family: 'Indie Flower' !important;
+.raleway{
+  font-family: 'Raleway';
 }
 
 .container-header-reseaux{
@@ -15,6 +15,8 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+
 
 .color-rose{
   color: #F2B999 !important;
@@ -33,11 +35,8 @@
 
 
 
-.logo {
-  background-image: url(../assets/logo.png);
-  background-repeat: no-repeat;
-  min-height: 25vh;
-  background-position-x: center;
+.min-h-20vh {
+  min-height: 20vh;
 }
 
 .social {
@@ -50,11 +49,20 @@
 
 
 
-header {
-  min-height: 65vh;
+.navbar-container{
+  width:90%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-header-reseaux-height{
+  height: 550px;
+}
+
+.container-header-bg{
   background-image: url(../assets/header-img.jpg);
-  background-size: cover;
-  background-position-y:bottom;
 }
 
 .titre_header {
@@ -82,8 +90,7 @@ button:focus{
 .navbar-light .navbar-nav .nav-link {
   text-decoration:none;
   text-align: center;
-  color: #027373;
-  font-family: 'Satisfy' !important;
+  color: #000000;
   font-size: 1.2rem;
 }
 
@@ -98,12 +105,17 @@ button:focus{
 /* end menu */
 
 .logo {
-  background-image: url(../assets/logo.png);
-  background-repeat: no-repeat;
-  height: 20vh;
-  background-position-x: center;
-
+  width: 130px;
+  height:auto;
 }
+
+/* start partie présentation */
+
+.img-promo{
+  width:80%;
+}
+
+/* end partie présentation */
 
 /* start page article */
 .lastarticles {
@@ -114,7 +126,7 @@ button:focus{
 .flip-card {
   background-color: transparent;
   width: 300px;
-  height: 300px;
+  height: 350px;
   perspective: 1000px;
 }
 
@@ -139,7 +151,6 @@ button:focus{
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-
 
 .flip-card-front {
   /* background-image:url(../media/three_js.jpg); */
@@ -194,15 +205,24 @@ button:focus{
   background-color: #1c3144;
 }
 
+.lettrine::first-letter{
+  font-size: 3.5rem;
+  float: left;
+  padding-right: 6px;
+  line-height: 45px;
+}
+
 /* end description projets */
 
 
 /***************section projets*********************/
-.titre-projet {
-  font-size: 4rem;
-  color: #8f8f8f;
-  font-family: 'Indie Flower';
+.titre_projet {
+  font-size: 3.5rem;
+  font-family: 'Pacifico';
+  color:#fec325;
+  text-shadow: 3px 3px #c04e0f;
 }
+
 .section-projet{
   background-color: #fff;
 }

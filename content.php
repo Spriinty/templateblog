@@ -1,66 +1,100 @@
+<!-- start partie présentation -->
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="row d-flex mt-5 mb-3">
+            <div class="col-4 mt-3 border-top"></div>
+            <div class="col-4 raleway">
+                <h2 class="text-center">PRESENTATION</h2>
+            </div>
+            <div class="col-4 mt-3 border-top"></div>
+        </div>
+        <div class="row d-flex align-items-center">
+            <div class="col-6 px-5">
+                <p class="lettrine">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quidem maxime, voluptates accusantium officiis eum, hic praesentium ad laborum animi veniam inventore at odio atque recusandae voluptatem? Quod, recusandae cum!</p>
+                <p class="lettrine">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, hic. Quibusdam laboriosam neque tenetur id sed blanditiis animi, odio, nisi sunt quae, omnis molestias molestiae minima explicabo error? Nobis, officia.</p>
+            </div>
+            <div class="col-6">
+                <img class="pt-3 pb-3 img-fluid img-promo" src="<?php echo get_template_directory_uri(); ?>/assets/promo-acs.jpg" alt="logo de la promotion des gitBreakers"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- end partie présentation -->
+
 <!-- start partie trois derniers articles -->
-<div class="container d-flex justify-content-between px-0 pt-5 pb-4 lastarticles pb-5">
+<div class="container pt-5">
+    <div class="d-flex mt-2 mb-1">
+        <div class="col-2 offset-1 mt-3 border-top"></div>
+        <div class="col-6 raleway">
+            <h2 class="text-center mb-0">LES TROIS DERNIERS PROJETS</h2>
+        </div>
+        <div class="col-2 mt-3 border-top"></div>
+    </div>
 
-    <?php
+    <div class="d-flex justify-content-around px-0 pt-5 pb-4 lastarticles pb-5">
+        <?php
 
-    $args =  array(
-        'post-type' => 'articles',
-        'post_status' => 'publish',
-        'posts_per_page' => 3,
-        'ordre' => 'DESC'
-    );
+        $args =  array(
+            'post-type' => 'articles',
+            'post_status' => 'publish',
+            'posts_per_page' => 3,
+            'ordre' => 'DESC'
+        );
 
-    $articlequery = new WP_Query($args);
+        $articlequery = new WP_Query($args);
 
-    if ($articlequery->have_posts()) : while ($articlequery->have_posts()) : $articlequery->the_post();
-    ?>
+        if ($articlequery->have_posts()) : while ($articlequery->have_posts()) : $articlequery->the_post();
+        ?>
 
-            <div class="flip-card">
-                <div class="flip-card-inner">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
 
-                    <div class="flip-card-front" style='background-image: url("<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>"); background-size: cover;'>
-                        <h3 class="pt-80-px tite_aticle"><?php the_title(); ?></h3>
+                        <div class="flip-card-front d-flex align-items-center justify-content-center" style='background-image: url("<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>"); background-size: cover;'>
+                            <h2 class="raleway text-white"><?php the_title(); ?></h2>
 
-
-                    </div>
-                    <div class="flip-card-back text-black">
-                        <!-- le titre -->
-                        <h3 class="pt-80-px tite_aticle"><?php the_title(); ?></h3>
-                        <!-- l'extrait -->
-                        <p><?php the_excerpt(); ?></p>
-                        <p><a class="text-decoration-none" href="<?php echo get_post_permalink() ?>">Lire l'article</a></p>
-                        <!-- la catégorie -->
-                        <p>
-                            <?php foreach ((get_the_category()) as $category) {
-                                echo '<ul class="list-unstyled"><li><a class="text-decoration-none" href="#">' . $category->cat_name . '</a></li></ul> ';
-                            }
-                            ?>
-                        </p>
-
-
+                        </div>
+                        <div class="flip-card-back text-black d-flex justify-content-center align-items-center">
+                            <div>
+                                <!-- le titre -->
+                                <h2><?php the_title(); ?></h2>
+                                <!-- l'extrait -->
+                                <p><?php the_excerpt(); ?></p>
+                                <p><a class="text-decoration-none" href="<?php echo get_post_permalink() ?>">Lire l'article</a></p>
+                                <!-- la catégorie -->
+                                <p>
+                                    <?php foreach ((get_the_category()) as $category) {
+                                        echo '<ul class="list-unstyled"><li><a class="text-decoration-none" href="#">' . $category->cat_name . '</a></li></ul> ';
+                                    }
+                                    ?>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-    <?php
-        endwhile;
-    endif;
+        <?php
+            endwhile;
+        endif;
 
-    wp_reset_postdata();
+        wp_reset_postdata();
 
-    ?>
+        ?>
+    </div>
+
 </div>
 <!-- end partie trois derniers articles -->
 
 <!-- partie présentation des projet -->
 <div class="container-fluid">
-    <div class="container description  pt-5 pb-5 px-5">
-        <div class="row d-flex flex-column justify-content-center text-center">
-            <div class="col-12 p-0 text-white">
-                <h1 class="titre-projet text-center pb-4 m-0">Projets</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores praesentium facilis, tempora laboriosam amet aut. Qui pariatur esse veniam at saepe. Eveniet, fuga? Adipisci repellat suscipit quia natus dolorum?</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, voluptatum at illum iure neque facilis dolores suscipit dolorum, tempore quibusdam ab eius voluptatem magnam natus repellat quam fuga provident sit.</p>
+    <div class="container pt-5 px-5">
+        <div class="d-flex mt-2 mb-1">
+            <div class="col-4 offset-1 mt-3 border-top"></div>
+            <div class="col-2 raleway">
+                <h2 class="text-center">PROJETS</h2>
             </div>
+            <div class="col-4 mt-3 border-top"></div>
         </div>
     </div>
 </div>

@@ -10,10 +10,12 @@ get_header();
 
 <div class="container p-0">
   <div class="main">
-    <div class="row">
-      <div class="col-12 text-center pt-5">
-        <h2>Projets</h2>
+    <div class="row mt-5">
+    <div class="col-4 mt-3 border-top"></div>
+      <div class="col-4 text-center">
+        <h2>TOUS NOS PROJETS</h2>
       </div>
+      <div class="col-4 mt-3 border-top"></div>
     </div>
 
     <?php
@@ -33,11 +35,12 @@ get_header();
         <div class="row pt-5">
           <div class="col-4 text-center pt-5 pb-5">
             <h2><?php the_title(); ?></h2>
-            <p><strong>Mini description:</strong></p>
+            <h3><strong>Description:</strong></h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, nisi explicabo nemo velit illo dolorem aut amet ratione similique, dolores, perspiciatis assumenda distinctio fugiat. Ea architecto autem aut incidunt ipsum?</p>
           </div>
 
           <div class="col-8" style='background-image: url("<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>"); background-size: cover; background-position-y: center;'></div>
+          </div>
       <?php
       endwhile;
     endif;
@@ -47,7 +50,7 @@ get_header();
     wp_reset_postdata();
 
       ?>
-        </div>
+        
   </div>
 </div>
 
