@@ -77,7 +77,7 @@
   <!-- DEBUT BLOC HEADER -->
 
   <header class="container-fluid d-flex justify-content-center">
-    <div class="container-header-reseaux container-header-reseaux-height text-white">
+    <div class="container-header-reseaux container-header-reseaux-height container-header-bg text-white">
       <div class="row h-100">
         <div class="col-6 offset-6 d-flex align-items-center p-0">
           <h4 class="titre_header text-right pb-4">Gitbreakers</h4>
