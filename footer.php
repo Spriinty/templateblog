@@ -12,6 +12,7 @@
                     <li><a href="https://www.accesscodeschool.fr/nous_rejoindre/" class="color-rose">Contact</a></li>
                 </ul>
             </div>
+            
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 px-5 pb-5 font-family-flower text-center text-sm-center text-md-center text-lg-left text-xl-left">
             <ul  class="list-unstyled">
                 <li><a href="https://www.accesscodeschool.fr/" class="color-rose">Visitez notre site</a></li>
