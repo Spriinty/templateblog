@@ -2,16 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+.raleway{
+  font-family: 'Raleway';
+}
 
 .min-h-20vh {
   min-height: 20vh;
-}
-
-.logo {
-  background-image: url(../assets/logo.png);
-  background-repeat: no-repeat;
-  min-height: 25vh;
-  background-position-x: center;
 }
 
 .social {
@@ -27,11 +25,27 @@ li {
   padding: 5px;
 }
 
-header {
-  min-height: 65vh;
+.navbar-container{
+  width:90%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-header-reseaux{
+  width:90%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
   background-image: url(../assets/header-img.jpg);
   background-size: cover;
   background-position-y:bottom;
+}
+
+.container-header-reseaux-height{
+  height: 550px;
 }
 
 .titre_header {
@@ -59,8 +73,7 @@ button:focus{
 .navbar-light .navbar-nav .nav-link {
   text-decoration:none;
   text-align: center;
-  color: #027373;
-  font-family: 'Satisfy' !important;
+  color: #000000;
   font-size: 1.2rem;
 }
 
@@ -75,11 +88,8 @@ button:focus{
 /* end menu */
 
 .logo {
-  background-image: url(../assets/logo.png);
-  background-repeat: no-repeat;
-  height: 20vh;
-  background-position-x: center;
-
+  width: 130px;
+  height:auto;
 }
 
 /* start page article */
@@ -91,7 +101,7 @@ button:focus{
 .flip-card {
   background-color: transparent;
   width: 300px;
-  height: 300px;
+  height: 350px;
   perspective: 1000px;
 }
 
@@ -115,13 +125,6 @@ button:focus{
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-}
-
-h2 {
-  padding-top: 80px;
-  font-family: 'Indie Flower';
-  font-size: 3rem;
-  color: rgba(134, 114, 114, 0.87) !important;
 }
 
 .flip-card-front {
