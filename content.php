@@ -102,7 +102,7 @@
 <!-- start partie réseaux sociaux -->
 
 <div class="container-fluid">
-    <div class="container bg-nude py-5">
+    <div class="container-header-reseaux bg-nude py-5">
         <div class="row fa-shadow">
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-contact pb-3 pb-sm-3 pb-md-3 pb-lg-0 pb-xl-0">
                 <h2>Retrouvez-nous sur les réseaux</h2>

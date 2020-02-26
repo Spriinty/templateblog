@@ -3,6 +3,22 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
 
+
+.font-family-flower{
+  font-family: 'Indie Flower' !important;
+}
+
+.container-header-reseaux{
+  width:90%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.color-rose{
+  color: #F2B999 !important;
+}
 .min-h-20vh {
   min-height: 20vh;
 }
@@ -14,6 +30,8 @@
   font-size: 3rem;
   color: rgba(134, 114, 114, 0.87) !important;
 }
+
+
 
 .logo {
   background-image: url(../assets/logo.png);
@@ -251,4 +269,47 @@ font-size: 1rem;
 
 .bordeur-top-footer{
   border-top: 1px solid #F2B999;
+}
+
+.logo-footer-size{
+  width:70%;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) 
+{ 
+  .container-header-reseaux{
+    width:100%;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px)
+{
+  .container-header-reseaux{
+    width:95%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px)
+{
+  .container-header-reseaux{
+    width:98%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px)
+{
+  .container-header-reseaux{
+    width:98%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px)
+{
+  
 }
