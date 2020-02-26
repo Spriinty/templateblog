@@ -3,9 +3,14 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 .raleway{
   font-family: 'Raleway';
+}
+
+.montserrat{
+  font-family: 'Montserrat';
 }
 
 .container-header-reseaux{
@@ -15,8 +20,6 @@
   margin-right: auto;
   margin-left: auto;
 }
-
-
 
 .color-rose{
   color: #F2B999 !important;
@@ -210,6 +213,7 @@ button:focus{
   float: left;
   padding-right: 6px;
   line-height: 45px;
+  color: #fec325;
 }
 
 /* end description projets */
