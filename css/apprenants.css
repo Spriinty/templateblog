@@ -36,12 +36,6 @@
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
-  h2{
-    padding-top: 80px;
-    font-family: 'Indie Flower' ;
-    font-size: 3rem;
-    color:rgba(134, 114, 114, 0.87) !important;
-  }
   
   .flip-card-front-apprenants {
     /* background-image:url(../media/three_js.jpg); */
