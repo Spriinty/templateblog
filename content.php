@@ -1,8 +1,8 @@
 <!-- start partie présentation -->
 
 <div class="container-fluid">
-    <div class="container">
-        <div class="row d-flex mt-5 mb-3">
+    <div class="container mb-3">
+        <div class="row d-flex mt-5 mb-5">
             <div class="col-4 mt-3 border-top"></div>
             <div class="col-4 raleway">
                 <h2 class="text-center">PRESENTATION</h2>
@@ -10,12 +10,17 @@
             <div class="col-4 mt-3 border-top"></div>
         </div>
         <div class="row d-flex align-items-center">
-            <div class="col-6 px-5">
-                <p class="lettrine">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quidem maxime, voluptates accusantium officiis eum, hic praesentium ad laborum animi veniam inventore at odio atque recusandae voluptatem? Quod, recusandae cum!</p>
-                <p class="lettrine">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, hic. Quibusdam laboriosam neque tenetur id sed blanditiis animi, odio, nisi sunt quae, omnis molestias molestiae minima explicabo error? Nobis, officia.</p>
+            <div class="col-6 px-3 montserrat">
+                <p class="lettrine">
+                    Bienvenue sur le blog des Gitbreakers! Nous vous présentons la promotion 33 de l'ACS de Vesoul aka Access Code School. Nous sommes 16 développeurs en herbe, mordus de technologies et passionnés par le code.
+                </p>
+                <p class="lettrine">
+                    Après huit mois de formation, des projets réalisés en équipe et des milliers de lignes de code dans les doigts, c'est avec plaisir que nous vous présentons ce blog en vous souhaitant une excellente navigation.
+                </p>
+        
             </div>
-            <div class="col-6">
-                <img class="pt-3 pb-3 img-fluid img-promo" src="<?php echo get_template_directory_uri(); ?>/assets/promo-acs.jpg" alt="logo de la promotion des gitBreakers"/>
+            <div class="col-6 d-flex justify-content-center align-items-center">
+                <img class="img-fluid img-promo" src="<?php echo get_template_directory_uri(); ?>/assets/promo-acs.jpg" alt="logo de la promotion des gitBreakers"/>
             </div>
         </div>
     </div>
@@ -28,7 +33,7 @@
     <div class="d-flex mt-2 mb-1">
         <div class="col-2 offset-1 mt-3 border-top"></div>
         <div class="col-6 raleway">
-            <h2 class="text-center mb-0">LES TROIS DERNIERS PROJETS</h2>
+            <h2 class="text-center mb-0">LES TROIS DERNIERS ARTICLES</h2>
         </div>
         <div class="col-2 mt-3 border-top"></div>
     </div>
