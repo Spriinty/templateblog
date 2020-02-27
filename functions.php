@@ -151,7 +151,7 @@ function projets_custom_post_type()
         // Le nom au pluriel
         'name'                => _x('Projets', 'Post Type General Name'),
         // Le nom au singulier
-        'singular_name'       => _x('Projet', 'Post Type Singular Name'),
+        'singular_name'       => _x('projets', 'Post Type Singular Name'),
         // Le libellé affiché dans le menu
         'menu_name'           => __('Projets'),
         // Les différents libellés de l'administration
@@ -162,15 +162,15 @@ function projets_custom_post_type()
         'edit_item'           => __('Editer un projet'),
         'update_item'         => __('Modifier un projet'),
         'search_items'        => __('Rechercher un projet'),
-        'not_found'           => __('Projet non trouvé'),
-        'not_found_in_trash'  => __('Non trouvée dans la corbeille'),
+        'not_found'           => __('projet non trouvée'),
+        'not_found_in_trash'  => __('Non trouvé dans la corbeille'),
     );
 
     // On peut définir ici d'autres options pour notre custom post type
 
     $args = array(
-        'label'               => __('Projets'),
-        'description'         => __('3 projet de la promotion 33 des Gitbreakers'),
+        'label'               => __('Projet'),
+        'description'         => __('Toutes les projets de la promo 33 de Vesoul à OnlineFormaPro'),
         'labels'              => $labels,
         'menu_icon'      => 'dashicons-id-alt',
         // On définit les options disponibles dans l'éditeur de notre custom post type ( un titre, un âge etc...)
@@ -194,7 +194,7 @@ add_action('init', 'projets_custom_post_type', 0);
 
 
 /**
- * Ajout de la métabox projet
+ * Add meta box
  *
  * @param post $post The post object
  * @link https://codex.wordpress.org/Plugin_API/Action_Reference/add_meta_boxes
@@ -212,19 +212,13 @@ function projets_build_meta_box($post)
     wp_nonce_field(basename(__FILE__), 'projets_meta_box_nonce');
 
     $projetlink = get_post_meta($post->ID, '_projets_link', true);
-
     $projetdescription = get_post_meta($post->ID, '_projets_description', true);
-  
-
-
-
-
 
 ?>
     <div class='inside'>
-        <h3><?php _e('link', 'projets_example_plugin'); ?></h3>
+        <h3><?php _e('Liens', 'projets_example_plugin'); ?></h3>
         <p>
-            <input type="text" name="link" value="<?php echo $projetlink; ?>" />
+            <input type="text" name="liens" value="<?php echo $projetlink; ?>" />
         </p>
         <h3><?php _e('Description', 'projets_example_plugin'); ?></h3>
         <p>
@@ -259,14 +253,15 @@ function projets_save_meta_box_data($post_id)
 
     // store custom fields values
     // age string
-    if (isset($_REQUEST['link'])) {
-        update_post_meta($post_id, '_projets_link', sanitize_text_field($_POST['link']));
-    }
-
     if (isset($_REQUEST['description'])) {
         update_post_meta($post_id, '_projets_description', sanitize_text_field($_POST['description']));
     }
 
+    // store custom fields values
+    // ville string
+    if (isset($_REQUEST['liens'])) {
+        update_post_meta($post_id, '_projets_liens', sanitize_text_field($_POST['liens']));
+    }
 }
 add_action('save_post_projets', 'projets_save_meta_box_data');
 
