@@ -29,15 +29,15 @@ $my_query = new WP_Query($args);
             // 3. on lance la boucle !
             if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post();
             ?>
-                    <div class="col-3 flip-card-apprenants mt-4 mb-2">
+                    <div class="col-6 col-sm-3 flip-card-apprenants mt-sm-4 mb-sm-2">
                         <div class="flip-card-inner-apprenants">
 
                             <div class="flip-card-front-apprenants text-center">
                                 <div>
-                                    <p class="mb-2 pacifico name-apprenants"><?php the_title(); ?></p>
+                                    <p class="mt-3 mb-0 mt-sm-0 mb-sm-2 pacifico name-apprenants"><?php the_title(); ?></p>
                                 </div>
                                 <div>
-                                    <p><?php the_post_thumbnail(array('class' => "img-fluid")); ?></p>
+                                    <p><?php the_post_thumbnail(array('class' => "img-fluid avatar")); ?></p>
                                 </div>
                             </div>
                             <div class="flip-card-back-apprenants">
@@ -48,7 +48,7 @@ $my_query = new WP_Query($args);
                                     </p>
                                 </div>
                                 <div>
-                                    <p><?php the_post_thumbnail(array('class' => "img-fluid")); ?></p>
+                                    <p><?php the_post_thumbnail(array('class' => "img-fluid avatar")); ?></p>
                                 </div>
                             </div>
                         </div>
