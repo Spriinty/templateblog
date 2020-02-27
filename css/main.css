@@ -12,6 +12,9 @@
 .montserrat{
   font-family: 'Montserrat';
 }
+.title-size-h2{
+font-size: 2rem;
+}
 
 .indieflower{
   font-family:'Indie flower', ;
@@ -26,7 +29,7 @@
 }
 
 .color-rose{
-  color: #F2B999 !important;
+  color: #fec325!important;
 }
 .min-h-20vh {
   min-height: 20vh;
@@ -46,10 +49,11 @@
 
 .social {
   list-style: none;
-  color: #fff;
+  color: #fec325;
   display: flex;
   /* padding-right: 20px;
   padding-top: 20px; */
+ 
 }
 
 
@@ -278,28 +282,33 @@ button:focus{
 /***********footer************/
 .bg-nude{
   /* min-height: 20vh; */
-  background-color:#F2B999;
+  background-color:#fec325;
 }
 .text-contact{
   font-family: 'Pacifico';
   color:#fff;
 }
 .bg-footer{
- background-color: #f0eae01a; 
+ background-color: #194759; 
 } 
 .title-footer{
-color:  #8f8f8f;
+color:  #fec325;
 font-family: 'Indie Flower' !important;
 font-size: 1rem;
 }
 
 .bordeur-top-footer{
-  border-top: 1px solid #F2B999;
+  border-top: 1px solid #fec325;
 }
 
 .logo-footer-size{
   width:70%;
+  color: #fec325 !important;
 }
+.logo-center{
+  text-align-last: center;
+}
+
 
 
 /* Extra small devices (portrait phones, less than 576px) */
