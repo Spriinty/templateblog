@@ -2,6 +2,11 @@
 
 get_header();
 ?>
+
+    <?php
+    get_template_part('banniere', get_post_format());
+    ?>
+
 <div class="container">
     <div class="row">
         <div class="col-12 col-sm-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2 pb-5">

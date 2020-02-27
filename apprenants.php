@@ -8,6 +8,9 @@ Template Name: Apprenants
 
 get_header();
 ?>
+<?php
+    get_template_part('banniere', get_post_format());
+    ?>
 
 <h2 class="text-center">Les apprenants de la promo 33 de l'ACS à Vesoul</h2>
 

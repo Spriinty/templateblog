@@ -6,6 +6,9 @@
 
 get_header();
 ?>
+<?php
+    get_template_part('banniere', get_post_format());
+    ?>
 
 <div class="container">
     <div class="row">
