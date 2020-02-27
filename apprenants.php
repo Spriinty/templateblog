@@ -12,6 +12,7 @@ get_header();
 $args = array(
     'post_type' => 'personnes',
     'posts_per_page' => -1,
+    'order' => 'ASC'
 );
 
 // 2. on exécute la query
@@ -19,21 +20,18 @@ $my_query = new WP_Query($args);
 ?>
 <div class="container-fluid">
     <div class="container">
-        <h2 class="text-center">Les apprenants de la promo 33 de l'ACS à Vesoul</h2>
 
-        <div class="row d-flex flex-wrap">
+        <div class="row d-flex flex-wrap mt-5 mb-5">
             <?php
             // 3. on lance la boucle !
             if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post();
             ?>
-
-                
-                    <div class="col-3 flip-card-apprenants">
+                    <div class="col-3 flip-card-apprenants mt-4 mb-2">
                         <div class="flip-card-inner-apprenants">
 
                             <div class="flip-card-front-apprenants text-center">
                                 <div>
-                                    <p class="mb-0"><?php the_title(); ?></p>
+                                    <p class="mb-2 pacifico name-apprenants"><?php the_title(); ?></p>
                                 </div>
                                 <div>
                                     <p><?php the_post_thumbnail(array('class' => "img-fluid")); ?></p>
@@ -52,7 +50,6 @@ $my_query = new WP_Query($args);
                             </div>
                         </div>
                     </div>
-                
 
             <?php
                 endwhile;
@@ -65,3 +62,4 @@ $my_query = new WP_Query($args);
 
     </div>
 </div>
+<?php get_footer(); ?>
