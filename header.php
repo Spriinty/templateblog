@@ -29,6 +29,7 @@
 
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css">
   <link href="<?php bloginfo('template_directory'); ?>/css/main.css" rel="stylesheet">
+  <link href="<?php bloginfo('template_directory'); ?>/css/article.css" rel="stylesheet">
   <link href="<?php bloginfo('template_directory'); ?>/css/apprenants.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
