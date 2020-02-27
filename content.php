@@ -3,18 +3,18 @@
 <div class="container-fluid">
     <div class="container">
         <div class="row d-flex mt-5 mb-3">
-            <div class="col-4 mt-3 border-top"></div>
-            <div class="col-4 raleway">
-                <h2 class="text-center">PRESENTATION</h2>
+            <div class="col-2 col-sm-3 col-md-3 col-lg-4 col-xl-4  mt-2 mt-sm-2 mt-md-2 mt-lg-3 mt-xl-3  border-top"></div>
+            <div class="col-8 col-sm-6 col-md-6 col-lg-4 col-xl- 4raleway px-3">
+                <h2 class="text-center title-size-h2">PRESENTATION</h2>
             </div>
-            <div class="col-4 mt-3 border-top"></div>
+            <div class="col-2 col-sm-3 col-md-3 col-lg-4 col-xl-4 mt-2 mt-sm-2 mt-md-2 mt-lg-3 mt-xl-3 border-top"></div>
         </div>
         <div class="row d-flex align-items-center">
-            <div class="col-6 px-5">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
                 <p class="lettrine">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quidem maxime, voluptates accusantium officiis eum, hic praesentium ad laborum animi veniam inventore at odio atque recusandae voluptatem? Quod, recusandae cum!</p>
                 <p class="lettrine">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, hic. Quibusdam laboriosam neque tenetur id sed blanditiis animi, odio, nisi sunt quae, omnis molestias molestiae minima explicabo error? Nobis, officia.</p>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center text-sm-center text-md-center text-lg-right text-xl-right">
                 <img class="pt-3 pb-3 img-fluid img-promo" src="<?php echo get_template_directory_uri(); ?>/assets/promo-acs.jpg" alt="logo de la promotion des gitBreakers" />
             </div>
         </div>
@@ -28,7 +28,7 @@
     <div class="d-flex mt-2 mb-1">
         <div class="col-2 offset-1 mt-3 border-top"></div>
         <div class="col-6 raleway">
-            <h2 class="text-center mb-0">LES TROIS DERNIERS ARTCLES</h2>
+            <h2 class="text-center mb-0 title-size-h2">LES TROIS DERNIERS ARTCLES</h2>
         </div>
         <div class="col-2 mt-3 border-top"></div>
     </div>
@@ -143,7 +143,7 @@
         <div class="d-flex mt-2 mb-1">
             <div class="col-4 offset-1 mt-3 border-top"></div>
             <div class="col-2 raleway">
-                <h2 class="text-center">PROJETS</h2>
+                <h2 class="text-center ">PROJETS</h2>
             </div>
             <div class="col-4 mt-3 border-top"></div>
         </div>
