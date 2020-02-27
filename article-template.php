@@ -58,6 +58,7 @@ get_template_part('banniere', get_post_format());
         </div>
     </div>
 </div>
+
 <?php
 get_footer();
 ?>
