@@ -66,6 +66,8 @@
 
 .container-header-bg{
   background-image: url(../assets/header-img.jpg);
+  background-position-y: bottom;
+  background-position-x: center;
 }
 
 .titre_header {
@@ -316,6 +318,18 @@ font-size: 1rem;
   .text-hover {
     font-size: 2rem; 
 }
+.container-header-bg{
+  background-image: url(../assets/header-img.jpg);
+  background-position-x: center;
+  background-size: cover;
+}
+
+.titre_header {
+  font-size: 2rem;
+}
+.container-header-reseaux-height{
+  height: 40vh;
+}
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px)
@@ -332,6 +346,14 @@ font-size: 1rem;
   .div-hover-text {
   
     opacity: 1; 
+  }
+  .container-header-bg{
+    background-image: url(../assets/header-img.jpg);
+    background-position-y: bottom;
+    background-position-x: center;
+  }
+  .titre_header {
+    font-size: 2.5rem;
   }
   
 }
@@ -352,7 +374,14 @@ font-size: 1rem;
   
   opacity: 1; 
 }
-
+.container-header-bg{
+  background-image: url(../assets/header-img.jpg);
+  background-position-y: bottom;
+  background-position-x: center;
+}
+.titre_header {
+  font-size: 4.5rem;
+}
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -361,6 +390,9 @@ font-size: 1rem;
   .container-header-reseaux{
     width:98%;
   }
+  .titre_header {
+    font-size: 5.5rem;
+  }
 }
 
 /* MEDIAS QUERIES UNIQUEMENT POUR LE CONTAINER HEADER ET RESEAUX 1200 - 1400 */
@@ -368,11 +400,14 @@ font-size: 1rem;
 {
   .container-header-reseaux{
     width:98%;
+  }}
+  @media (min-width: 1200px) and (max-width: 1550px)
+  {
+    .container-header-reseaux{
+      width:98%;
+    }
+    .titre_header {
+      font-size: 6.5rem;
+    }
   }
-}
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px)
-{
-  
-}
