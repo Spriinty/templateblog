@@ -1,30 +1,29 @@
 <!-- start partie présentation -->
 
 <div class="container-fluid">
-    <div class="container mb-3">
-        <div class="row d-flex mt-5 mb-5">
-            <div class="col-4 mt-3 border-top"></div>
-            <div class="col-4 raleway">
-                <h2 class="text-center">PRESENTATION</h2>
+    <div class="container">
+        <div class="row d-flex mt-5 mb-3">
+            <div class="col-2 col-sm-3 col-md-3 col-lg-4 col-xl-4  mt-2 mt-sm-2 mt-md-2 mt-lg-3 mt-xl-3  border-top"></div>
+            <div class="col-8 col-sm-6 col-md-6 col-lg-4 col-xl- 4raleway px-3">
+                <h2 class="text-center title-size-h2">PRESENTATION</h2>
             </div>
-            <div class="col-4 mt-3 border-top"></div>
+            <div class="col-2 col-sm-3 col-md-3 col-lg-4 col-xl-4 mt-2 mt-sm-2 mt-md-2 mt-lg-3 mt-xl-3 border-top"></div>
         </div>
         <div class="row d-flex align-items-center">
-            <div class="col-6 px-3 montserrat">
-                <p class="lettrine">
-                    Bienvenue sur le blog des Gitbreakers! Nous vous présentons la promotion 33 de l'ACS de Vesoul aka Access Code School. Nous sommes 16 développeurs en herbe, mordus de technologies et passionnés par le code.
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+                <p class="lettrine">Bienvenue sur le blog des Gitbreakers! Nous vous présentons la promotion 33 de l'ACS de Vesoul aka Access Code School. Nous sommes 16 développeurs en herbe, mordus de technologies et passionnés par le code.
                 </p>
                 <p class="lettrine">
-                    Après huit mois de formation, des projets réalisés en équipe et des milliers de lignes de code dans les doigts, c'est avec plaisir que nous vous présentons ce blog en vous souhaitant une excellente navigation.
-                </p>
-        
+                    Après huit mois de formation, des projets réalisés en équipe et des milliers de lignes de code dans les doigts, c'est avec plaisir que nous vous présentons ce blog en vous souhaitant une excellente navigation.</p>
             </div>
-            <div class="col-6 d-flex justify-content-center align-items-center">
-                <img class="img-fluid img-promo" src="<?php echo get_template_directory_uri(); ?>/assets/promo-acs.jpg" alt="logo de la promotion des gitBreakers"/>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center text-sm-center text-md-center text-lg-right text-xl-right">
+                <img class="pt-3 pb-3 img-fluid img-promo" src="<?php echo get_template_directory_uri(); ?>/assets/promo-acs.jpg" alt="logo de la promotion des gitBreakers" />
             </div>
         </div>
     </div>
 </div>
+
+
 
 <!-- end partie présentation -->
 
@@ -33,62 +32,113 @@
     <div class="d-flex mt-2 mb-1">
         <div class="col-2 offset-1 mt-3 border-top"></div>
         <div class="col-6 raleway">
-            <h2 class="text-center mb-0">LES TROIS DERNIERS ARTICLES</h2>
+            <h2 class="text-center mb-0 title-size-h2">LES TROIS DERNIERS ARTCLES</h2>
         </div>
         <div class="col-2 mt-3 border-top"></div>
     </div>
 
-    <div class="d-flex justify-content-around px-0 pt-5 pb-4 lastarticles pb-5">
-        <?php
+    <div class="d-block">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
 
-        $args =  array(
-            'post-type' => 'articles',
-            'post_status' => 'publish',
-            'posts_per_page' => 3,
-            'ordre' => 'DESC'
-        );
+    <div class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
+        <div class="d-flex justify-content-between px-0 pt-5 pb-4 lastarticles pb-5">
+            <?php
 
-        $articlequery = new WP_Query($args);
+            $args =  array(
+                'post-type' => 'articles',
+                'post_status' => 'publish',
+                'posts_per_page' => 3,
+                'ordre' => 'DESC'
+            );
 
-        if ($articlequery->have_posts()) : while ($articlequery->have_posts()) : $articlequery->the_post();
-        ?>
+            $articlequery = new WP_Query($args);
 
-                <div class="flip-card">
-                    <div class="flip-card-inner">
+            if ($articlequery->have_posts()) : while ($articlequery->have_posts()) : $articlequery->the_post();
+            ?>
 
-                        <div class="flip-card-front d-flex align-items-center justify-content-center" style='background-image: url("<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>"); background-size: cover;'>
-                            <h2 class="raleway text-white"><?php the_title(); ?></h2>
+                    <div class="flip-card d-none d-sm-none d-md-none d-lg-block d-xl-block">
+                        <div class="flip-card-inner">
 
-                        </div>
-                        <div class="flip-card-back text-black d-flex justify-content-center align-items-center">
-                            <div>
-                                <!-- le titre -->
-                                <h2><?php the_title(); ?></h2>
-                                <!-- l'extrait -->
-                                <p><?php the_excerpt(); ?></p>
-                                <p><a class="text-decoration-none" href="<?php echo get_post_permalink() ?>">Lire l'article</a></p>
-                                <!-- la catégorie -->
-                                <p>
-                                    <?php foreach ((get_the_category()) as $category) {
-                                        echo '<ul class="list-unstyled"><li><a class="text-decoration-none" href="#">' . $category->cat_name . '</a></li></ul> ';
-                                    }
-                                    ?>
-                                </p>
+                            <div class="flip-card-front d-flex align-items-center justify-content-center" style='background-image: url("<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>"); background-size: cover;'>
+                                <h2 class="raleway text-white"><?php the_title(); ?></h2>
+
+                            </div>
+                            <div class="flip-card-back text-black d-flex justify-content-center align-items-center">
+                                <div>
+                                    <!-- le titre -->
+                                    <h2><?php the_title(); ?></h2>
+                                    <!-- l'extrait -->
+                                    <p><?php the_excerpt(); ?></p>
+                                    <p><a class="text-decoration-none" href="<?php echo get_post_permalink() ?>">Lire l'article</a></p>
+                                    <!-- la catégorie -->
+                                    <p>
+                                        <?php foreach ((get_the_category()) as $category) {
+                                            echo '<ul class="list-unstyled"><li><a class="text-decoration-none" href="#">' . $category->cat_name . '</a></li></ul> ';
+                                        }
+                                        ?>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+            <?php
+                endwhile;
+            endif;
 
-        <?php
-            endwhile;
-        endif;
+            wp_reset_postdata();
 
-        wp_reset_postdata();
-
-        ?>
+            ?>
+        </div>
     </div>
 
+
+    <div class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
+        <div class="row">
+            <?php
+            $args =  array(
+                'post-type' => 'articles',
+                'post_status' => 'publish',
+                'posts_per_page' => 3,
+                'ordre' => 'DESC'
+            );
+
+            $articlequery = new WP_Query($args);
+
+            if ($articlequery->have_posts()) : while ($articlequery->have_posts()) : $articlequery->the_post();
+            ?> <div class="col-12 pt-5 px-sm-0 px-md-0">
+                        <div class="border shadow">
+                            <div style='background-image: url("<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>"); background-size: cover; background-position:center; height:40vh; width: 100%;'></div>
+                            <div class="p-3">
+                                <h2><?php the_title(); ?></h2>
+                            <!-- l'extrait -->
+                            <p><?php the_excerpt(); ?></p>
+                            <p><a class="text-decoration-none" href="<?php echo get_post_permalink() ?>">Lire l'article</a></p>
+                            </div>
+                            
+                        </div>
+                    </div>
+            <?php
+                endwhile;
+            endif;
+
+            wp_reset_postdata();
+
+            ?>
+        </div>
+    </div>
+
+
+
+
 </div>
+
+
+
+
+
 <!-- end partie trois derniers articles -->
 
 <!-- partie présentation des projet -->
@@ -97,7 +147,7 @@
         <div class="d-flex mt-2 mb-1">
             <div class="col-4 offset-1 mt-3 border-top"></div>
             <div class="col-2 raleway">
-                <h2 class="text-center">PROJETS</h2>
+                <h2 class="text-center ">PROJETS</h2>
             </div>
             <div class="col-4 mt-3 border-top"></div>
         </div>
