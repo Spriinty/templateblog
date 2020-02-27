@@ -9,7 +9,7 @@ Template Name: Apprenants
 get_header();
 ?>
 
-<h2>Les apprenants de la promo 33 de l'ACS à Vesoul</h2>
+<h2 class="text-center">Les apprenants de la promo 33 de l'ACS à Vesoul</h2>
 
 <?php
 

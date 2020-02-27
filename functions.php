@@ -211,22 +211,18 @@ function projets_build_meta_box($post)
     // make sure the form request comes from WordPress
     wp_nonce_field(basename(__FILE__), 'projets_meta_box_nonce');
 
-    // retrieve the _personnes_nom current value
-    // $current_nom = get_post_meta($post->ID, '_personnes_nom', true);
-
-    // retrieve the _personnes_linkedin current value
-    $description = get_post_meta($post->ID, '_projets_description', true);
-    $liens = get_post_meta($post->ID, '_projets_liens', true);
+    $projetlink = get_post_meta($post->ID, '_projets_link', true);
+    $projetdescription = get_post_meta($post->ID, '_projets_description', true);
 
 ?>
     <div class='inside'>
-        <h3><?php _e('Description', 'projets_example_plugin'); ?></h3>
-        <p>
-            <input type="text" name="description" value="<?php echo $description; ?>" />
-        </p>
         <h3><?php _e('Liens', 'projets_example_plugin'); ?></h3>
         <p>
-            <input type="text" name="liens" value="<?php echo $liens; ?>" />
+            <input type="text" name="liens" value="<?php echo $projetlink; ?>" />
+        </p>
+        <h3><?php _e('Description', 'projets_example_plugin'); ?></h3>
+        <p>
+            <input type="text" name="description" value="<?php echo $projetdescription; ?>" />
         </p>
     </div>
 <?php
@@ -276,3 +272,4 @@ require get_template_directory() . '/bootstrap-navwalker.php';
 register_nav_menus( array(
     'primary' => esc_html__( 'Primary', 'theme-textdomain' ),
 ) );
+
