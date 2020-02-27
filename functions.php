@@ -213,6 +213,10 @@ function projets_build_meta_box($post)
 
     $projetlink = get_post_meta($post->ID, '_projets_link', true);
 
+    $projetdescription = get_post_meta($post->ID, '_projets_description', true);
+  
+
+
 
 
 
@@ -221,6 +225,10 @@ function projets_build_meta_box($post)
         <h3><?php _e('link', 'projets_example_plugin'); ?></h3>
         <p>
             <input type="text" name="link" value="<?php echo $projetlink; ?>" />
+        </p>
+        <h3><?php _e('Description', 'projets_example_plugin'); ?></h3>
+        <p>
+            <input type="text" name="description" value="<?php echo $projetdescription; ?>" />
         </p>
     </div>
 <?php
@@ -255,6 +263,10 @@ function projets_save_meta_box_data($post_id)
         update_post_meta($post_id, '_projets_link', sanitize_text_field($_POST['link']));
     }
 
+    if (isset($_REQUEST['description'])) {
+        update_post_meta($post_id, '_projets_description', sanitize_text_field($_POST['description']));
+    }
+
 }
 add_action('save_post_projets', 'projets_save_meta_box_data');
 
@@ -265,3 +277,4 @@ require get_template_directory() . '/bootstrap-navwalker.php';
 register_nav_menus( array(
     'primary' => esc_html__( 'Primary', 'theme-textdomain' ),
 ) );
+
