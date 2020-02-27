@@ -5,10 +5,10 @@
             <div class="col-12 col-sm-6 offset-sm-3 col-md-4 offset-md-4 col-lg-4 offset-lg-0 col-xl-4 offset-xl-0  text-center px-5 pb-5  "><img class="logo-footer-size" src="<?php echo get_template_directory_uri(); ?>/assets/logoyellow.png" alt="logo de la promotion des gitBreakers" /></div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 px-5 pb-5 font-family-flower text-center text-sm-center text-md-center text-lg-left text-xl-left">
                 <ul class="list-unstyled">
-                    <li><a href="#" class="color-rose">Accueil</a></li>
-                    <li><a href="#" class="color-rose">Apprenants</a></li>
-                    <li><a href="#" class="color-rose">Articles</a></li>
-                    <li><a href="#" class="color-rose">Projets</a></li>
+                    <li><a href="#" class="color-rose raleway">Accueil</a></li>
+                    <li><a href="#" class="color-rose raleway">Apprenants</a></li>
+                    <li><a href="#" class="color-rose raleway">Articles</a></li>
+                    <li><a href="#" class="color-rose raleway">Projets</a></li>
                     <li><a href="https://www.accesscodeschool.fr/nous_rejoindre/" class="color-rose">Contact</a></li>
                 </ul>
             </div>
