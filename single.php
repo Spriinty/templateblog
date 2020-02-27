@@ -19,7 +19,7 @@ get_header();
 
 
                     <article>
-                        <p>Désolé il n'y a pas d'articles ici !</p>
+                        <h2>Désolé il n'y a pas d'articles ici !</h2>
                     </article>
                 <?php endif; ?>
                 </div>
