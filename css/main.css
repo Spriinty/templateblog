@@ -40,8 +40,6 @@
   color: rgba(134, 114, 114, 0.87) !important;
 }
 
-
-
 .min-h-20vh {
   min-height: 20vh;
 }
@@ -333,6 +331,9 @@ font-size: 1rem;
 }
 .container-header-reseaux-height{
   height: 40vh;
+}
+.title-size-h2{
+font-size: 1rem;
 }
 }
 /* Small devices (landscape phones, 576px and up) */
