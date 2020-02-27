@@ -9,7 +9,7 @@
                     <li><a href="#" class="color-rose raleway">Apprenants</a></li>
                     <li><a href="#" class="color-rose raleway">Articles</a></li>
                     <li><a href="#" class="color-rose raleway">Projets</a></li>
-                    <li><a href="https://www.accesscodeschool.fr/nous_rejoindre/" class="color-rose">Contact</a></li>
+                    <li><a href="https://www.accesscodeschool.fr/nous_rejoindre/" class="color-rose raleway">Contact</a></li>
                 </ul>
             </div>
 
