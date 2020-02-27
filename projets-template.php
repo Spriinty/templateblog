@@ -8,7 +8,7 @@ get_header();
 ?>
 
 
-<div class="container p-0">
+<div class="container p-0 pb-5">
   <div class="main">
     <div class="row mt-5">
     <div class="col-4 mt-3 border-top"></div>
@@ -28,20 +28,23 @@ get_header();
 
     // 2. on exécute la query
     $my_query = new WP_Query($args);
-
+    $i = 0;
     // 3. on lance la boucle !
     if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post();
     ?>
-        <div class="row pt-5">
+        <div class="row mt-5 shadow">
           <div class="col-4 text-center pt-5 pb-5">
             <h2><?php the_title(); ?></h2>
-            <p class="text-break"><?php echo get_post_meta($post->ID, '_projets_description', true); ?></p><br>
-            <p><a href="<?php echo get_post_meta($post->ID, '_projets_link', true); ?>"> Voir le projet</a></p>        
+            <p id="demo<?php echo $i ?>" class="text-break collapse"><?php echo get_post_meta($post->ID, '_projets_description', true); ?></p><br>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo<?php echo $i ?>">Description</button><br>
+            <p class="col-12 pt-3"><a href="<?php echo get_post_meta($post->ID, '_projets_link', true); ?>"><img class="img-fluid icon-projet" src="<?php echo get_template_directory_uri(); ?>/assets/monitor.png" /></a></p>
+
           </div>
 
           <div class="col-8" style='background-image: url("<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>"); background-size: cover; background-position-y: center;'></div>
         </div>
       <?php
+      $i++;
       endwhile;
     endif;
 
@@ -54,6 +57,6 @@ get_header();
   </div>
 </div>
 
-<?php
-get_footer();
-?>
+<!-- FIN BLOC CONTENT -->
+<?php get_footer(); ?>
+

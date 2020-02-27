@@ -279,6 +279,16 @@ button:focus{
   color:rgba(134, 114, 114, 0.87) !important;
 }
 
+.radius-btn-proj {
+  border-radius: 25px;
+
+}
+
+.icon-projet{
+  height: 40px;
+  width:auto;
+}
+
 /***********footer************/
 .bg-nude{
   /* min-height: 20vh; */
