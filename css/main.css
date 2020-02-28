@@ -3,8 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+ .vogue{
+  font-family: 'Abril Fatface', ;
+ }
 .raleway {
   font-family: 'Raleway';
 }
@@ -18,7 +20,7 @@
 }
 
 .indieflower {
-  font-family: 'Indie flower', ;
+  font-family: 'Indie flower' ;
 }
 
 .container-header-reseaux {
@@ -339,6 +341,10 @@ button:focus {
     width: 100%;
   }
 
+  .titre_header {
+    font-size: 3rem;
+  }
+  
   .left-projet {
     height: 300px;
     margin-bottom: 33px;
@@ -399,7 +405,7 @@ button:focus {
   }
 
   .titre_header {
-    font-size: 2.5rem;
+    font-size: 5rem;
   }
 
 .h-image-projets-articles{
