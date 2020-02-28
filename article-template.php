@@ -10,7 +10,7 @@ get_header();
 get_template_part('banniere', get_post_format());
 ?>
 
-<div class="container">
+<div class="container raleway">
     <div class="row">
         <div class="col-12">
             <h2 class="text-center py-5"><?php the_title(); ?></h2>
@@ -18,7 +18,7 @@ get_template_part('banniere', get_post_format());
     </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid raleway">
     <div class="container">
         <div class="main">
 
@@ -39,12 +39,12 @@ get_template_part('banniere', get_post_format());
 
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 raleway">
                             <p><?php the_excerpt(); ?></p>
-                            <p><a href="<?php the_permalink(); ?>">Lien vers l'article "<?php the_title(); ?>"</a></p>
+                            <div class="btn btn-warning"><a class="text-white" href="<?php the_permalink(); ?>">Lire l'article</a></div>
                         </div>
 
                         <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 h-image-projets-articles" style='background-image: url("<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>");background-size: cover;'>
                              <div class="w-50 m-auto">
-                                <h2 class="font-family-pacifito text-center mt-5 px-5 py-3 bg-mid-white"><?php the_title(); ?></h2>
+                                <h3 class="text-center mt-5 px-5 py-3 bg-mid-white"><?php the_title(); ?></h3>
                             </div>
                         </div>
                     </div>
