@@ -38,14 +38,13 @@ get_template_part('banniere', get_post_format());
                     <div class="row mb-5 article-height shadow flex-wrap-reverse flex-sm-wrap-reverse flex-md-wrap-reverse">
 
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 raleway">
+                            <p class="mt-4"><?php the_title(); ?></p>
                             <p><?php the_excerpt(); ?></p>
-                            <div class="btn btn-warning"><a class="text-white" href="<?php the_permalink(); ?>">Lire l'article</a></div>
+                            <div class="btn btn-warning mb-4 mb-sm-4 mb-md-4 mb-lg-0 mb-xl-0"><a class="text-white" href="<?php the_permalink(); ?>">Lire l'article</a></div>
                         </div>
 
                         <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 h-image-projets-articles" style='background-image: url("<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>");background-size: cover;'>
-                             <div class="w-50 m-auto">
-                                <h3 class="text-center mt-5 px-5 py-3 bg-mid-white"><?php the_title(); ?></h3>
-                            </div>
+                             
                         </div>
                     </div>
 
