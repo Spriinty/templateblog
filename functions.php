@@ -260,7 +260,7 @@ function projets_save_meta_box_data($post_id)
     // store custom fields values
     // ville string
     if (isset($_REQUEST['liens'])) {
-        update_post_meta($post_id, '_projets_liens', sanitize_text_field($_POST['liens']));
+        update_post_meta($post_id, '_projets_link', sanitize_text_field($_POST['liens']));
     }
 }
 add_action('save_post_projets', 'projets_save_meta_box_data');
