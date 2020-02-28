@@ -43,9 +43,10 @@ get_template_part('banniere', get_post_format());
                         </div>
 
                         <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 h-image-projets-articles" style='background-image: url("<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>");background-size: cover;'>
-                            <h2 class="font-family-pacifito text-center "><?php the_title(); ?></h2>
+                             <div class="w-50 m-auto">
+                                <h2 class="font-family-pacifito text-center mt-5 px-5 py-3 bg-mid-white"><?php the_title(); ?></h2>
+                            </div>
                         </div>
-
                     </div>
 
             <?php
