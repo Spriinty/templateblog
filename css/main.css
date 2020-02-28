@@ -351,10 +351,9 @@ button:focus {
   }
 
   .text-hover {
-    font-size: 2rem;
+    font-size: 2rem; 
   }
-
-  .container-header-bg {
+  .container-header-bg{
     background-image: url(../assets/header-img.jpg);
     background-position-x: center;
     background-size: cover;
@@ -363,17 +362,15 @@ button:focus {
   .titre_header {
     font-size: 2rem;
   }
-
-  .container-header-reseaux-height {
+  .container-header-reseaux-height{
     height: 40vh;
   }
-
-  .title-size-h2 {
-    font-size: 1rem;
+  .title-size-h2{
+  font-size: 1rem;
   }
 
-  .h-image-projets-articles {
-    height: 30vh;
+  .h-image-projets-articles{
+      height:30vh;
   }
 }
 
@@ -405,10 +402,10 @@ button:focus {
     font-size: 2.5rem;
   }
 
-  .h-image-projets-articles {
-    height: 30vh;
-  }
-
+.h-image-projets-articles{
+    height:30vh;
+}
+  
 }
 
 /* Medium devices (tablets, 768px and up) */
