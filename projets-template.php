@@ -2,6 +2,7 @@
 /*
   Template Name: Projet-template
   Template Post Type: post, page, product
+  
 */
 
 get_header();

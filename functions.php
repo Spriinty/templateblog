@@ -1,7 +1,5 @@
 <?php
 
-
-
 // function navigation_menu() {
 //     register_nav_menu('menu_principal',__( 'Menu principal' ));
 //   }
