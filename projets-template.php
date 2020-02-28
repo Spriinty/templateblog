@@ -7,6 +7,10 @@
 get_header();
 ?>
 
+<?php
+get_template_part('banniere', get_post_format());
+?>
+
 
 <div class="container p-0 pb-5">
   <div class="main">
@@ -66,4 +70,3 @@ get_header();
 
 <!-- FIN BLOC CONTENT -->
 <?php get_footer(); ?>
-
