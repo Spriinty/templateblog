@@ -3,7 +3,11 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+
+.vogue {
+  font-family: 'Abril Fatface', ;
+}
 
 .raleway {
   font-family: 'Raleway';
@@ -18,7 +22,7 @@
 }
 
 .indieflower {
-  font-family: 'Indie flower', ;
+  font-family: 'Indie flower';
 }
 
 .container-header-reseaux {
@@ -334,6 +338,10 @@ button:focus {
     width: 100%;
   }
 
+  .titre_header {
+    font-size: 3rem;
+  }
+
   .left-projet {
     height: 300px;
     margin-bottom: 33px;
@@ -346,9 +354,10 @@ button:focus {
   }
 
   .text-hover {
-    font-size: 2rem; 
+    font-size: 2rem;
   }
-  .container-header-bg{
+
+  .container-header-bg {
     background-image: url(../assets/header-img.jpg);
     background-position-x: center;
     background-size: cover;
@@ -357,15 +366,17 @@ button:focus {
   .titre_header {
     font-size: 2rem;
   }
-  .container-header-reseaux-height{
+
+  .container-header-reseaux-height {
     height: 40vh;
   }
-  .title-size-h2{
-  font-size: 1rem;
+
+  .title-size-h2 {
+    font-size: 1rem;
   }
 
-  .h-image-projets-articles{
-      height:30vh;
+  .h-image-projets-articles {
+    height: 40vh;
   }
 }
 
@@ -394,13 +405,13 @@ button:focus {
   }
 
   .titre_header {
-    font-size: 2.5rem;
+    font-size: 5rem;
   }
 
-.h-image-projets-articles{
-    height:30vh;
-}
-  
+  .h-image-projets-articles {
+    height: 40vh;
+  }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -434,6 +445,10 @@ button:focus {
   .h-image-projets-articles {
     height: 30vh;
   }
+
+  .h-image-articles {
+    height: 30vh;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -461,5 +476,20 @@ button:focus {
 
   .titre_header {
     font-size: 6.5rem;
+  }
+}
+
+
+/* Iphone X Landscape */
+@media (width:812px) and (height:375px) {
+  .h-image-projets-articles {
+    height: 70vh;
+  }
+}
+
+/* Iphone 8 Landscape */
+@media (width:667px) and (height:375px) {
+  .h-image-projets-articles {
+    height: 70vh;
   }
 }
