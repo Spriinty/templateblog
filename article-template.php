@@ -39,7 +39,7 @@ get_template_part('banniere', get_post_format());
 
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 raleway">
                             <p><?php the_excerpt(); ?></p>
-                            <p><a href="<?php the_permalink(); ?>">Lien vers l'article "<?php the_title(); ?>"</a></p>
+                            <div class="btn btn-warning text-center"><a class="text-decoration-none text-white" href="<?php echo get_post_permalink() ?>">Lire l'article</a></div>
                         </div>
 
                         <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 h-image-projets-articles" style='background-image: url("<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>");background-size: cover;'>

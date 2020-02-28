@@ -69,17 +69,11 @@
                             <div class="flip-card-back text-black d-flex justify-content-center align-items-center">
                                 <div>
                                     <!-- le titre -->
-                                    <h2><?php the_title(); ?></h2>
+                                    <h2 class="raleway text-center"><?php the_title(); ?></h2>
                                     <!-- l'extrait -->
-                                    <p><?php the_excerpt(); ?></p>
-                                    <p><a class="text-decoration-none" href="<?php echo get_post_permalink() ?>">Lire l'article</a></p>
+                                    <p class="raleway text-left"><?php the_excerpt(); ?></p>
+                                    <div class="btn btn-warning"><a class="text-decoration-none text-white" href="<?php echo get_post_permalink() ?>">Lire l'article</a></div>
                                     <!-- la catégorie -->
-                                    <p>
-                                        <?php foreach ((get_the_category()) as $category) {
-                                            echo '<ul class="list-unstyled"><li><a class="text-decoration-none" href="#">' . $category->cat_name . '</a></li></ul> ';
-                                        }
-                                        ?>
-                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -115,7 +109,8 @@
                                 <h2><?php the_title(); ?></h2>
                                 <!-- l'extrait -->
                                 <p><?php the_excerpt(); ?></p>
-                                <p><a class="text-decoration-none" href="<?php echo get_post_permalink() ?>">Lire l'article</a></p>
+                             
+                                <div class="btn btn-warning"><a class="text-decoration-none text-white" href="<?php echo get_post_permalink() ?>">Lire l'article</a></div>
                             </div>
 
                         </div>

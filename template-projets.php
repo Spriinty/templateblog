@@ -1,9 +1,8 @@
 <?php
 /*
-  Template Name: Projet-template
-  Template Post Type: post, page, product
+  Template Name: Projets
+  Template Post Type: page
 */
-
 get_header();
 ?>
 
