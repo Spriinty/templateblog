@@ -9,17 +9,17 @@
                     <li><a href="#" class="color-rose raleway">Apprenants</a></li>
                     <li><a href="#" class="color-rose raleway">Articles</a></li>
                     <li><a href="#" class="color-rose raleway">Projets</a></li>
-                    <li><a href="https://www.accesscodeschool.fr/nous_rejoindre/" class="color-rose">Contact</a></li>
+                    <li><a href="https://www.accesscodeschool.fr/nous_rejoindre/" class="color-rose raleway">Contact</a></li>
                 </ul>
             </div>
 
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 px-5 pb-5 font-family-flower text-center    text-sm-center text-md-center text-lg-left text-xl-left">
                 <ul class="list-unstyled">
-                    <li><a href="https://www.accesscodeschool.fr/" class="color-rose">Visitez notre site</a></li>
-                    <li><a href="https://www.facebook.com/AccessCodeSchool/?ref=br_rs" class="color-rose">Facebook</a></li>
-                    <li><a href="https://twitter.com/onlineformapro" class="color-rose">Twitter OnlineFormaPro</a></li>
-                    <li><a href="https://twitter.com/AccessCodeOFP" class="color-rose">Twitter Access Code School</a></li>
-                    <li><a href="#" class="color-rose">Lorem ipsom dolor</a></li>
+                    <li><a href="https://www.accesscodeschool.fr/" class="color-rose raleway">Visitez notre site</a></li>
+                    <li><a href="https://www.facebook.com/AccessCodeSchool/?ref=br_rs" class="color-rose raleway">Facebook</a></li>
+                    <li><a href="https://twitter.com/onlineformapro" class="color-rose raleway">Twitter OnlineFormaPro</a></li>
+                    <li><a href="https://twitter.com/AccessCodeOFP" class="color-rose raleway">Twitter Access Code School</a></li>
+                    <li><a href="#" class="color-rose raleway">Lorem ipsom dolor</a></li>
                 </ul>
             </div>
         </div>

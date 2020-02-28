@@ -6,8 +6,8 @@ Template Name: Apprenants
 get_header();
 ?>
 <?php
-    get_template_part('banniere', get_post_format());
-    ?>
+get_template_part('banniere', get_post_format());
+?>
 
 <?php
 
@@ -24,6 +24,14 @@ $my_query = new WP_Query($args);
 <div class="container-fluid">
     <div class="container">
 
+        <div class="row d-flex mt-5 mb-3 pt-5">
+            <div class="col-2 col-sm-3 col-md-3 col-lg-4 col-xl-4  mt-4 md-2 mt-lg-3 mt-xl-3  border-top"></div>
+            <div class="col-8 col-sm-6 col-md-6 col-lg-4 col-xl-4 raleway px-3">
+                <h2 class="text-center title-size-h2">LES GITBREAKERS</h2>
+            </div>
+            <div class="col-2 col-sm-3 col-md-3 col-lg-4 col-xl-4 mt-4 mt-lg-3 mt-xl-3 border-top"></div>
+        </div>
+
         <div class="row d-flex flex-wrap mt-5 mb-5">
             <?php
             // 3. on lance la boucle !
@@ -34,7 +42,7 @@ $my_query = new WP_Query($args);
 
                             <div class="flip-card-front-apprenants text-center">
                                 <div>
-                                    <p class="mt-3 mb-0 mt-sm-0 mb-sm-2 pacifico name-apprenants"><?php the_title(); ?></p>
+                                    <p class="mt-3 mb-0 mt-sm-0 mb-sm-2 raleway name-apprenants"><?php the_title(); ?></p>
                                 </div>
                                 <div>
                                     <p><?php the_post_thumbnail(array('class' => "img-fluid avatar")); ?></p>
