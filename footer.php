@@ -17,8 +17,8 @@
                 <ul class="list-unstyled raleway">
                     <li><a href="https://www.accesscodeschool.fr/" class="color-rose raleway">OnlineFormaPro</a></li>
                     <li><a href="https://www.facebook.com/AccessCodeSchool/?ref=br_rs" class="color-rose raleway">Facebook</a></li>
-                    <li><a href="https://twitter.com/onlineformapro" class="color-rose raleway">Twitter</a></li>
-                    <li><a href="https://twitter.com/AccessCodeOFP" class="color-rose raleway">Twitter</a></li>
+                    <li><a href="https://twitter.com/onlineformapro" class="color-rose raleway">Twitter OnlineFormaPro</a></li>
+                    <li><a href="https://twitter.com/AccessCodeOFP" class="color-rose raleway">Twitter Access Code School</a></li>
                     <li><a href="https://www.accesscodeschool.fr/blog/" class="color-rose raleway">Blog</a></li>
                 </ul>
             </div>

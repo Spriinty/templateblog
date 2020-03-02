@@ -32,7 +32,7 @@
     <div class="d-flex mt-2 mb-1">
         <div class="col-3 mt-2 border-top"></div>
         <div class="col-6 raleway">
-            <h2 class="text-center  title-size-h2 text-separtion">ARTCLES A LA UNE</h2>
+            <h2 class="text-center  title-size-h2 text-separtion">ARTICLES A LA UNE</h2>
         </div>
         <div class="col-3 mt-2 border-top"></div>
     </div>
@@ -59,7 +59,7 @@
             if ($articlequery->have_posts()) : while ($articlequery->have_posts()) : $articlequery->the_post();
             ?>
 
-                    <div class="flip-card d-none d-sm-none d-md-none d-lg-block d-xl-block">
+                    <div class="flip-card d-none d-sm-none d-md-none d-lg-block d-xl-block raleway ">
                         <div class="flip-card-inner">
 
                             <div class="flip-card-front d-flex align-items-center justify-content-center" style='background-image: url("<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>"); background-size: cover;'>
@@ -69,9 +69,9 @@
                             <div class="flip-card-back text-black d-flex justify-content-center align-items-center">
                                 <div>
                                     <!-- le titre -->
-                                    <h2 class="raleway text-center"><?php the_title(); ?></h2>
+                                    <h2 class="text-center"><?php the_title(); ?></h2>
                                     <!-- l'extrait -->
-                                    <p class="raleway text-left"><?php the_excerpt(); ?></p>
+                                    <p class="text-center"><?php echo get_the_excerpt(); ?></p>
                                     <div class="btn btn-warning"><a class="text-decoration-none text-white" href="<?php echo get_post_permalink() ?>">Lire l'article</a></div>
                                     <!-- la catégorie -->
                                 </div>
@@ -105,11 +105,11 @@
             ?> <div class="col-12 pt-5 px-sm-0 px-md-0">
                         <div class="border shadow">
                             <div style='background-image: url("<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>"); background-size: cover; background-position:center; height:40vh; width: 100%;'></div>
-                            <div class="p-3">
-                                <h2><?php the_title(); ?></h2>
+                            <div class="p-3 raleway ">
+                                <h2 class="text-center"><?php the_title(); ?></h2>
                                 <!-- l'extrait -->
-                                <p><?php the_excerpt(); ?></p>
-                             
+                                <p class="text-left"><?php get_the_excerpt(); ?></p>
+
                                 <div class="btn btn-warning"><a class="text-decoration-none text-white" href="<?php echo get_post_permalink() ?>">Lire l'article</a></div>
                             </div>
 
@@ -196,8 +196,8 @@
         <div class="col-3 mt-3 border-top"></div>
     </div>
     <div class="row  ">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 px-0  "">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.435154361931!2d6.152140625577409!3d47.63711010050714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4792f28ac3c7562f%3A0x428752472fa42de6!2s19%20Rue%20de%20Praley%2C%2070000%20Vesoul!5e0!3m2!1sfr!2sfr!4v1582808983672!5m2!1sfr!2sfr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 px-0">
+            <iframe src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.435154361931!2d6.152140625577409!3d47.63711010050714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4792f28ac3c7562f%3A0x428752472fa42de6!2s19%20Rue%20de%20Praley%2C%2070000%20Vesoul!5e0!3m2!1sfr!2sfr!4v1582808983672!5m2!1sfr!2sfr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 px-0 ">
             <iframe src="https://www.google.com/maps/embed?pb=!4v1582808780029!6m8!1m7!1sgRcMh6nY_N-6qqPbNpVtbA!2m2!1d47.63711010050714!2d6.152140625577409!3f283.3220833312668!4f-13.279209380019992!5f0.7820865974627469" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
