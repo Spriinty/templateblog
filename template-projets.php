@@ -42,9 +42,14 @@ get_template_part('banniere', get_post_format());
         <div class="row mt-5 shadow flex-wrap-reverse flex-sm-wrap-reverse">
           <div class="col-12 col-sm-12 col-lg-4 text-center pt-3 pb-3 pt-sm-3 pb-sm-3 pb-md-5 pt-md-5" >
             <h2 class="mb-5"><?php the_title(); ?></h2>
+<<<<<<< HEAD
             <p id="demo<?php echo $i ?>" class="text-break collapse"><?php echo get_post_meta($post->ID, '_projets_description', true); ?></p>
             <button type="button" class="btn btn-warning text-white" data-toggle="collapse" data-target="#demo<?php echo $i ?>">Description</button>
             <p><?php get_the_excerpt() ; ?>...</p>
+=======
+            <p id="demo<?php echo $i ?>" class="text-break"><?php echo get_post_meta($post->ID, '_projets_description', true); ?></p>
+            <p><?php the_excerpt() ; ?>...</p>
+>>>>>>> 7dd9e220b15cf3c78431c3d00576be406d425ab3
             <p class="col-12 mt-3"><a href="<?php echo get_post_meta($post->ID, '_projets_link', true); ?>"><img class="img-fluid icon-projet" src="<?php echo get_template_directory_uri(); ?>/assets/monitor.png" /></a></p>
 
           </div>
