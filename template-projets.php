@@ -44,7 +44,7 @@ get_template_part('banniere', get_post_format());
             <h2 class="mb-5"><?php the_title(); ?></h2>
             <p id="demo<?php echo $i ?>" class="text-break collapse"><?php echo get_post_meta($post->ID, '_projets_description', true); ?></p>
             <button type="button" class="btn btn-warning text-white" data-toggle="collapse" data-target="#demo<?php echo $i ?>">Description</button>
-            <p><?php the_excerpt() ; ?>...</p>
+            <p><?php get_the_excerpt() ; ?>...</p>
             <p class="col-12 mt-3"><a href="<?php echo get_post_meta($post->ID, '_projets_link', true); ?>"><img class="img-fluid icon-projet" src="<?php echo get_template_directory_uri(); ?>/assets/monitor.png" /></a></p>
 
           </div>

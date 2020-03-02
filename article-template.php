@@ -39,7 +39,7 @@ get_template_part('banniere', get_post_format());
 
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 raleway">
                             <p class="mt-4 font-weight-bold"><?php the_title(); ?></p>
-                            <p><?php the_excerpt(); ?></p>
+                            <p><?php get_the_excerpt() ; ?>...</p>
                             <div class="btn btn-warning mb-4 mb-sm-4 mb-md-4 mb-lg-0 mb-xl-0"><a class="text-white" href="<?php the_permalink(); ?>">Lire l'article</a></div>
                         </div>
 
