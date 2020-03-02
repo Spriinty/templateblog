@@ -11,9 +11,9 @@
         </div>
         <div class="row d-flex align-items-center">
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
-                <p class="lettrine">Bienvenue sur le blog des Gitbreakers! Nous vous présentons la promotion 33 de l'ACS de Vesoul aka Access Code School. Nous sommes 16 développeurs en herbe, mordus de technologies et passionnés par le code.
+                <p class="lettrine raleway">Bienvenue sur le blog des Gitbreakers! Nous vous présentons la promotion 33 de l'ACS de Vesoul aka Access Code School. Nous sommes 16 développeurs en herbe, mordus de technologies et passionnés par le code.
                 </p>
-                <p class="lettrine">
+                <p class="lettrine raleway">
                     Après huit mois de formation, des projets réalisés en équipe et des milliers de lignes de code dans les doigts, c'est avec plaisir que nous vous présentons ce blog en vous souhaitant une excellente navigation.</p>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center text-sm-center text-md-center text-lg-right text-xl-right">
@@ -69,17 +69,11 @@
                             <div class="flip-card-back text-black d-flex justify-content-center align-items-center">
                                 <div>
                                     <!-- le titre -->
-                                    <h2><?php the_title(); ?></h2>
+                                    <h2 class="raleway text-center"><?php the_title(); ?></h2>
                                     <!-- l'extrait -->
-                                    <p><?php the_excerpt(); ?></p>
-                                    <p><a class="text-decoration-none" href="<?php echo get_post_permalink() ?>">Lire l'article</a></p>
+                                    <p class="raleway text-left"><?php the_excerpt(); ?></p>
+                                    <div class="btn btn-warning"><a class="text-decoration-none text-white" href="<?php echo get_post_permalink() ?>">Lire l'article</a></div>
                                     <!-- la catégorie -->
-                                    <p>
-                                        <?php foreach ((get_the_category()) as $category) {
-                                            echo '<ul class="list-unstyled"><li><a class="text-decoration-none" href="#">' . $category->cat_name . '</a></li></ul> ';
-                                        }
-                                        ?>
-                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -115,7 +109,8 @@
                                 <h2><?php the_title(); ?></h2>
                                 <!-- l'extrait -->
                                 <p><?php the_excerpt(); ?></p>
-                                <p><a class="text-decoration-none" href="<?php echo get_post_permalink() ?>">Lire l'article</a></p>
+                             
+                                <div class="btn btn-warning"><a class="text-decoration-none text-white" href="<?php echo get_post_permalink() ?>">Lire l'article</a></div>
                             </div>
 
                         </div>
@@ -167,7 +162,7 @@
             <div class=" col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 px-0 pr-lg-4 pr-xl-4 position-relative">
                 <div class="pr-2 left-projet">
                     <div class="div-hover-text position-absolute w-100">
-                        <div class="text-hover"><a class="text-decoration-none text-white" href="https://desireeb.promo-vesoul33.codeur.online/kingburger/"><i class="fa fa-link text-hover  p-2 " aria-hidden="true"></i>Burger</a></div>
+                        <div class="text-hover"><a class="text-decoration-none text-white" href="https://desireeb.promo-vesoul33.codeur.online/kingburger/"><img class="img-fluid icon-projet pr-3 pb-2 " src="<?php echo get_template_directory_uri(); ?>/assets/monitor_white.png" />Burger</a></div>
                     </div>
                 </div>
             </div>
@@ -175,12 +170,12 @@
             <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 right-projet  px-0">
                 <div class="col-12  right-up position-relative">
                     <div class="div-hover-text position-absolute w-100">
-                        <div class="text-hover"> <a class="text-decoration-none text-white" href="https://quentinp364.promo-vesoul33.codeur.online/automotive/index.html"><i class="fa fa-link text-hover p-3" aria-hidden="true"></i>Automotive</a></div>
+                        <div class="text-hover"><a class="text-decoration-none text-white" href="https://quentinp364.promo-vesoul33.codeur.online/automotive/index.html"><img class="img-fluid icon-projet pr-3 pb-2" src="<?php echo get_template_directory_uri(); ?>/assets/monitor_white.png" />Automotive</a></div>
                     </div>
                 </div>
                 <div class="col-12 right-down position-relative ">
                     <div class="div-hover-text position-absolute w-100">
-                        <div class="text-hover"><a class="text-decoration-none text-white" href=""><i class="fa fa-link text-hover p-3" aria-hidden="true"></i>Ciné </a></div>
+                        <div class="text-hover"><a class="text-decoration-none text-white" href=""><img class="img-fluid icon-projet pr-3 pb-2" src="<?php echo get_template_directory_uri(); ?>/assets/monitor_white.png" />Ciné </a></div>
                     </div>
                 </div>
             </div>
@@ -196,7 +191,7 @@
     <div class="d-flex mt-2 mb-1">
         <div class="col-3  mt-3 border-top py-5"></div>
         <div class="col-6 raleway">
-            <h2 class="text-center title-size-h2">Retrouvez-nous</h2>
+            <h2 class="text-center title-size-h2">RETROUVEZ-NOUS</h2>
         </div>
         <div class="col-3 mt-3 border-top"></div>
     </div>

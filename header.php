@@ -44,7 +44,7 @@
 </head>
 
 <body> 
-
+<div class="conatiner-fluid">
   <div class="navbar-container d-flex pl-0 pr-0">
 
     <nav class="navbar navbar-expand-lg navbar-light p-0 raleway w-100">
@@ -64,13 +64,13 @@
           'menu_id'        => 'Primary',
           'container'      => false,
           'depth'          => 2,
-          'menu_class'     => 'navbar-nav w-100 justify-content-between',
+          'menu_class'     => 'navbar-nav pb-3 pb-sm-3 pb-md-3 pb-lg-0 pb-xl-0 w-100 justify-content-between',
           'walker'         => new Bootstrap_NavWalker(),
           'fallback_cb'    => 'Bootstrap_NavWalker::fallback',
         ));
         ?>
       </div>
     </nav>
-
+  </div>
   </div>
 
