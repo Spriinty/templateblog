@@ -1,7 +1,5 @@
 <?php
 
-
-
 // function navigation_menu() {
 //     register_nav_menu('menu_principal',__( 'Menu principal' ));
 //   }
@@ -9,10 +7,16 @@
 
 add_theme_support('post-thumbnails');
 
+add_post_type_support( 'page', 'excerpt' );
+
+function custom_short_excerpt($excerpt){
+	return substr($excerpt, 0, 100);
+}
+add_filter('the_excerpt', 'custom_short_excerpt');
+
 /*
 * On utilise une fonction pour créer notre custom post type 'Personnes'
 */
-
 function wpm_custom_post_type()
 {
 
@@ -192,6 +196,11 @@ function projets_custom_post_type()
 
 add_action('init', 'projets_custom_post_type', 0);
 
+function projet_excerpt() {
+    add_post_type_support( 'projets', 'excerpt' );
+}
+add_action( 'init', 'projet_excerpt' );
+
 
 /**
  * Add meta box
@@ -272,4 +281,3 @@ require get_template_directory() . '/bootstrap-navwalker.php';
 register_nav_menus( array(
     'primary' => esc_html__( 'Primary', 'theme-textdomain' ),
 ) );
-

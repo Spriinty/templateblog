@@ -1,7 +1,5 @@
 <?php
-/*
-Template Name: Accueil
-*/
+ var_dump($wp);
 
 get_header(); ?>
 <!-- DEBUT BLOC CONTENT -->
