@@ -12,17 +12,17 @@ get_header();
 get_template_part('banniere', get_post_format());
 ?>
 
-
-<div class="container p-0 pb-5">
+<div class="container-fluid">
+<div class="container p-0 pb-5 raleway">
   <div class="main">
     <div class="row mt-5">
-    <div class="col-4 mt-3 border-top"></div>
+      <div class="col-4 mt-3 border-top"></div>
       <div class="col-4 text-center">
         <h2>TOUS NOS PROJETS</h2>
       </div>
       <div class="col-4 mt-3 border-top"></div>
     </div>
-    </div>
+  </div>
 
     <div class="container-fluid">
       <div class="container">
