@@ -272,4 +272,3 @@ require get_template_directory() . '/bootstrap-navwalker.php';
 register_nav_menus( array(
     'primary' => esc_html__( 'Primary', 'theme-textdomain' ),
 ) );
-
