@@ -44,7 +44,7 @@
 </head>
 
 <body> 
-<div class="conatiner-fluid">
+<div class="container-fluid">
   <div class="navbar-container d-flex pl-0 pr-0">
 
     <nav class="navbar navbar-expand-lg navbar-light p-0 raleway w-100">
