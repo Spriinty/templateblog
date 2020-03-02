@@ -40,11 +40,12 @@ get_template_part('banniere', get_post_format());
     ?>
       
         <div class="row mt-5 shadow flex-wrap-reverse flex-sm-wrap-reverse">
-          <div class="col-12 col-sm-12 col-lg-4 text-center pt-3 pb-3 pt-sm-3 pb-sm-3 pt-md-5 pb-md-5 pt-md-5" >
-            <h2><?php the_title(); ?></h2>
-            <p id="demo<?php echo $i ?>" class="text-break collapse"><?php echo get_post_meta($post->ID, '_projets_description', true); ?></p><br>
-            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo<?php echo $i ?>">Description</button><br>
-            <p class="col-12 pt-3"><a href="<?php echo get_post_meta($post->ID, '_projets_link', true); ?>"><img class="img-fluid icon-projet" src="<?php echo get_template_directory_uri(); ?>/assets/monitor.png" /></a></p>
+          <div class="col-12 col-sm-12 col-lg-4 text-center pt-3 pb-3 pt-sm-3 pb-sm-3 pb-md-5 pt-md-5" >
+            <h2 class="mb-5"><?php the_title(); ?></h2>
+            <p id="demo<?php echo $i ?>" class="text-break collapse"><?php echo get_post_meta($post->ID, '_projets_description', true); ?></p>
+            <button type="button" class="btn btn-warning text-white" data-toggle="collapse" data-target="#demo<?php echo $i ?>">Description</button>
+            <p><?php the_excerpt() ; ?>...</p>
+            <p class="col-12 mt-3"><a href="<?php echo get_post_meta($post->ID, '_projets_link', true); ?>"><img class="img-fluid icon-projet" src="<?php echo get_template_directory_uri(); ?>/assets/monitor.png" /></a></p>
 
           </div>
 
