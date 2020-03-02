@@ -71,7 +71,7 @@
                                     <!-- le titre -->
                                     <h2 class="text-center"><?php the_title(); ?></h2>
                                     <!-- l'extrait -->
-                                    <p class="text-left"><?php echo get_the_excerpt(); ?></p>
+                                    <p class="text-center"><?php echo get_the_excerpt(); ?></p>
                                     <div class="btn btn-warning"><a class="text-decoration-none text-white" href="<?php echo get_post_permalink() ?>">Lire l'article</a></div>
                                     <!-- la catégorie -->
                                 </div>
